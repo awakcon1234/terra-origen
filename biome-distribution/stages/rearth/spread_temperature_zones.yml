@@ -1,0 +1,15 @@
+stages:
+  - type: REPLACE
+    from: land
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: NoiseLookup
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      lookup:
+        type: EXPRESSION 
+        expression: temperature(x, z)
+    to:
+      cold: 1
+      medium: 1
+      warm: 1

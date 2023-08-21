@@ -1,0 +1,12 @@
+stages:
+  - type: REPLACE
+    from: ocean
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to:
+      OCEAN: 1
+      DEEP_OCEAN: 1
+      TROPICAL_OCEAN: 1

@@ -1,0 +1,35 @@
+stages:
+  - type: REPLACE
+    from: _pillow_plains
+    sampler:
+      dimensions: 2
+      type: EXPRESSION
+      variables: 
+        edgeThreshold: ${customization.yml:biomeSpread.borderBiomes.edgeThreshold}
+      expression: if(cells(x,z) < -edgeThreshold, 1, -1)
+      samplers:
+        cells:
+          dimensions: 2
+          type: CELLULAR
+          jitter: ${customization.yml:biomeSpread.cellJitter}
+          frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to: # 0 = outer, 1 = inner
+      PILLOW_PLAINS_OUTER: 1
+      PILLOW_PLAINS_INNER: 1
+  - type: REPLACE
+    from: _secluded_valleys
+    sampler:
+      dimensions: 2
+      type: EXPRESSION
+      variables: 
+        edgeThreshold: ${customization.yml:biomeSpread.borderBiomes.edgeThreshold}
+      expression: if(cells(x,z) < -edgeThreshold + 0.1, 1, -1)
+      samplers:
+        cells:
+          dimensions: 2
+          type: CELLULAR
+          jitter: ${customization.yml:biomeSpread.cellJitter}
+          frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to: # 0 = outer, 1 = inner
+      SECLUDED_VALLEY_OUTER: 1
+      SECLUDED_VALLEY: 1

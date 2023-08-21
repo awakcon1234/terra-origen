@@ -1,3 +1,10 @@
+biomeSpread:
+  cellDistance: 300
+  cellJitter: 0.8
+  riverScale: 0.0013
+  borderBiomes:
+    edgeThreshold: 0.8
+
 
 global-scale: 1
 # Modifies the scale of all biome distribution, you can use this parameter 
@@ -54,7 +61,7 @@ spawn-island-elevation-scale: 0.3
 # Continental
 # ---
 
-continental-scale: 1
+continental-scale: 0.8
 # Controls the scale of land / coastal / oceanic distribution. Increasing
 # this produces larger landmasses and larger oceans, and vice-versa when
 # decreasing it.
@@ -63,7 +70,7 @@ continental-scale: 1
 continental-offset: 0.2
 # Default: 0.2
 
-continental-coast-width: 20
+continental-coast-width: 30
 # Default: 30
 
 continental-coast-threshold: 0.05
@@ -92,7 +99,7 @@ elevation-flatlands-threshold: 0.1
 # Temperature
 # ---
 
-temperature-scale: 1
+temperature-scale: 0.6
 # Controls the scale of temperature zones. Most biomes are placed according to
 # a temperature map so hot biomes can't generate next to cold biomes, as well as
 # allowing for biomes of similar temperatures to generate together. Increasing this

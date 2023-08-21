@@ -1,0 +1,51 @@
+biomes:
+  type: EXTRUSION
+  extrusions:
+    - << biome-distribution/extrusions/add_special_caves.yml:extrusions
+    - << biome-distribution/extrusions/add_cave_biomes.yml:extrusions
+    - << biome-distribution/extrusions/add_deep_dark.yml:extrusions
+  provider:
+    type: PIPELINE
+    resolution: 4
+    blend:
+      amplitude: 6
+      sampler:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.012
+    pipeline:
+      source:
+        type: SAMPLER
+        sampler:
+          type: CELLULAR
+          jitter: ${customization.yml:biomeSpread.cellJitter}
+          return: NoiseLookup
+          frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+          lookup:
+            type: EXPRESSION
+            expression: continents(x, z)
+        biomes:
+          ocean: 1
+          land: 1
+      stages:
+        - << biome-distribution/stages/rearth/coasts.yml:stages
+        - << biome-distribution/stages/rearth/fill_coasts.yml:stages
+        - << biome-distribution/stages/rearth/oceans.yml:stages
+        - << biome-distribution/stages/rearth/spread_temperature_zones.yml:stages
+        - << biome-distribution/stages/rearth/fill_temperature_zones.yml:stages
+        - << biome-distribution/stages/rearth/special/border_biomes.yml:stages
+        - << biome-distribution/stages/rearth/add_rivers.yml:stages
+        
+        - type: FRACTAL_EXPAND
+          sampler:
+            type: WHITE_NOISE
+        - type: SMOOTH
+          sampler:
+            type: WHITE_NOISE
+        - type: SMOOTH
+          sampler:
+            type: WHITE_NOISE
+        - type: SMOOTH
+          sampler:
+            type: WHITE_NOISE
+
+            

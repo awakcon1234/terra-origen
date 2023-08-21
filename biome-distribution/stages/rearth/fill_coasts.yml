@@ -1,0 +1,28 @@
+stages:
+  - type: REPLACE # add small coast placeholders
+    from: coast_small
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      salt: 8726345
+    to:
+      # COAST_MEDIUM_A: 1
+      SHALE_BEACH: 1
+      PALM_BEACH: 1
+      BEACH: 1
+      MANGROVE_SWAMP: 1
+  - type: REPLACE # add big coast placeholders
+    from: coast_wide
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      salt: 8726345
+    to:
+      # COAST_MEDIUM_B: 1
+      TEMPERATE_SEA_ARCHES: 1
+      PALM_BEACH: 1
+      MARINE_MONOLITHS: 1

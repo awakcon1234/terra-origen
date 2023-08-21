@@ -1,0 +1,29 @@
+extrusions:
+  - type: REPLACE
+    from: ALL
+    sampler: &caveSampler
+      type: EXPRESSION
+      expression: |
+        if (caves(x,y*2,z) < -0.79, 
+          caveVariation(x,y*2,z),
+          -1)
+      samplers:
+        caves:
+          dimensions: 3
+          type: CELLULAR
+          frequency: 0.005
+          jitter: 0.05
+          salt: 24
+        caveVariation:
+          dimensions: 3
+          type: CELLULAR
+          frequency: 0.005
+          jitter: 0.05
+          salt: 24
+          return: CellValue
+    to:
+      - SELF: 3
+      - INFERNO_ISLES: 1
+    range:
+      min: -30
+      max: 45

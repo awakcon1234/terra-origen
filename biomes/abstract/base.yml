@@ -15,9 +15,11 @@ features:
   global-preprocessors:
     - LAVA_FLOOR
     - UNDERGROUND_LAVA_COLUMNS
-    - CONTAIN_FLOATING_WATER
+    - WOOD_WATER_DAM
     - CAVE_GLOW_LICHEN
     - TEXTURED_STONE_SLANT
+  preprocessors:
+    - CONTAIN_FLOATING_WATER
   underwater-flora:
     - KELP
     - SEAGRASS

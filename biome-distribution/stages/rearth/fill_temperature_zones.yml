@@ -1,0 +1,40 @@
+stages:
+  - type: REPLACE
+    from: cold
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to:
+      LAND_COLD_A: 1
+      LAND_COLD_B: 1
+  - type: REPLACE
+    from: medium
+    sampler:
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      type: CELLULAR
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to:
+      FOSSILIZED_FENLANDS: 1
+      MURKY_MARSHLANDS: 1
+      VERTICAL_VISTAS: 1
+      VERDANT_VALLEYS: 1
+      _pillow_plains: 1
+      _secluded_valleys: 1
+      # LAND_MEDIUM_A: 1
+      # LAND_MEDIUM_B: 1
+  - type: REPLACE
+    from: warm
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to:
+      MESA_MONUMENTS: 1
+      LUSH_LOOPS: 1
+      CARVING_CREAKS: 1
+      # LAND_WARM_A: 1
+      # LAND_WARM_B: 1

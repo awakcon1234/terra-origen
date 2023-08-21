@@ -1,0 +1,34 @@
+riverSampler: &riverSampler
+  type: EXPRESSION
+  expression: if(-abs(rivers(x, z)) > -0.05, 1, -1)
+  samplers:
+    rivers:
+      dimensions: 2
+      type: OPEN_SIMPLEX_2
+      frequency: ${customization.yml:biomeSpread.riverScale}
+
+stages:
+  - type: REPLACE
+    from: USE_VISTA_RIVER
+    to:
+      SELF: 1
+      VISTAS_RIVER : 1
+    sampler: *riverSampler
+  - type: REPLACE
+    from: USE_LOOPS_RIVER
+    to:
+      SELF: 1
+      LOOPS_RIVER : 1
+    sampler: *riverSampler
+  - type: REPLACE
+    from: USE_VERDANT_RIVER
+    to:
+      SELF: 1
+      VERDANT_RIVER : 1
+    sampler: *riverSampler
+  - type: REPLACE
+    from: USE_RIVER
+    to:
+      SELF: 1
+      RIVER: 1
+    sampler: *riverSampler

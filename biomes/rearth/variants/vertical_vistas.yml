@@ -1,0 +1,99 @@
+id: VERTICAL_VISTAS
+type: BIOME
+vanilla: minecraft:plains
+color: $biomes/colors.yml:BAMBOO_JUNGLE
+extends: [ CARVING_LAND, BASE ]
+
+colors:
+  grass: 0x70E66D
+  water: 0x5DB7EF
+  leaves: 0x70E66D
+
+tags:
+  - USE_VISTA_RIVER
+
+vars: &variables
+  base: 75
+  height: 58
+  variationHeight: 20
+  terraceHeight: 2.5  // inverted
+  terraceThinness: 3.3
+  terraceStrength: 13
+
+terrain:
+  sampler:
+    dimensions: 3
+    type: EXPRESSION
+    variables: *variables
+    expression: |
+      // positive / higher = solid
+      -y + base + (height / 2) * biomeInfluence(x,z)
+      + terrace(surfaceBaseMountains(x,z) * biomeInfluence(x,z) * terraceThinness, terraceStrength) / (terraceHeight * (terraceSizeVariation(x,z) * 0.5 + 1))
+        * height + surfaceOffset(x,z) * variationHeight
+    functions:
+      terrace:
+        arguments: [x, terraceStrength]
+        expression: round(x) + 0.5 * (2*(x - round(x)))^terraceStrength
+    samplers:
+      biomeInfluence:
+        dimensions: 2
+        type: EXPRESSION
+        expression: |
+          clamp((-biomeSize(x,z) - 0.5) * 4, 0, 1)
+        functions:
+          clamp:
+            arguments: [x, a, b] # clamps x between a (low) and b (high)
+            expression: min(max(x, a), b)
+        samplers:
+          biomeSize:
+            dimensions: 2
+            type: CELLULAR
+            return: Distance
+            jitter: ${customization.yml:biomeSpread.cellJitter}
+            frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      surfaceBaseMountains:
+        dimensions: 2
+        type: OPEN_SIMPLEX_2S
+        frequency: 0.0048
+      terraceSizeVariation:
+        dimensions: 2
+        type: OPEN_SIMPLEX_2S
+        frequency: 0.0085
+        salt: 20
+      surfaceOffset:
+        dimensions: 2
+        type: FBM
+        sampler:
+          type: OPEN_SIMPLEX_2S
+          frequency: 0.0026
+          salt: 3
+        octaves: 3
+        lacunarity: 3.6
+        gain: 0.37
+
+slant:
+  - threshold: 0.8
+    palette:
+      - BLOCK:minecraft:stone: 319
+
+palette:
+  - GRASS_SNOW_MIX: 319
+  - GRASS_SANDY_VARIATION: 150
+  - SAND: 65
+  - << meta.yml:palette-bottom
+
+features:
+  preprocessors:
+    - POWDER_SNOW_DEPOSITS
+  slabs:
+    - SNOW_LAYERS
+  trees:
+    - SPARSE_BIRCH_TREES
+  flora:
+    - GRASS
+    - POPPY_PATCH
+    - OXEYE_DAISY_PATCH
+    - CORNFLOWER_PATCH
+    - ALLIUM_PATCH
+  postprocessors:
+    - TREE_SNOW

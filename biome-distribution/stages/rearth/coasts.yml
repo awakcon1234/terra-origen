@@ -1,0 +1,40 @@
+stages:
+  - type: REPLACE # split oceans into small and big coast sections
+    from: ocean
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to:
+      SELF: 1
+      ocean_coast_small: 2
+      ocean_coast_wide: 1
+  - type: REPLACE # add small coasts
+    from: ocean_coast_small
+    sampler:
+      type: EXPRESSION
+      expression: continentBorderCelledSmall(x, z)
+    to:
+      SELF: 1
+      coast_small: 1
+  - type: REPLACE # add big coasts
+    from: ocean_coast_wide
+    sampler:
+      type: EXPRESSION
+      expression: continentBorderCelledBig(x, z)
+    to:
+      SELF: 1
+      coast_wide: 1
+  - type: REPLACE # make small oceans placeholders oceans again
+    from: ocean_coast_small
+    sampler:
+      type: CONSTANT
+    to:
+      ocean: 1
+  - type: REPLACE # make big oceans placeholders oceans again
+    from: ocean_coast_wide
+    sampler:
+      type: CONSTANT
+    to:
+      ocean: 1
