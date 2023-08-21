@@ -10,6 +10,9 @@ color: $biomes/colors.yml:SNOWY_MOUNTAINS
 
 vanilla: minecraft:frozen_peaks
 
+tags:
+  - USE_FROZEN_RIVER
+
 ocean:
   palette: FROZEN_OCEAN
 

@@ -1,8 +1,14 @@
-id: VERDANT_RIVER
+id: MOUNTAIN_RIVER_FROZEN
 type: BIOME
-extends: [RIVER, VERDANT_VALLEYS]
+extends: [RIVER_FROZEN, SNOWY_MOUNTAINS]
 
-original-noise: &originalNoise $biomes/rearth/variants/verdant_valleys.yml:terrain.sampler # Original noise to be turned into river
+original-noise: &originalNoise $biomes/abstract/terrain/land/eq_land.yml:terrain.sampler # Original noise to be turned into river
+
+
+features:
+  river-decoration:
+    - CEILING_ICICLES
+    - CLAY_DEPOSITS
 
 vars: &variables
   ceilingHeight:    80  # Base Y level of the ceiling

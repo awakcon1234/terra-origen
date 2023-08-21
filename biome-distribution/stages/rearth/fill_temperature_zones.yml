@@ -8,7 +8,9 @@ stages:
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
       FROSTY_FINGERS: 1
-      LAND_COLD_B: 1
+      COLD_STEPPE: 1
+      SNOWY_MEADOW: 1
+      SNOWY_MOUNTAINS: 1
   - type: REPLACE
     from: medium
     sampler:
@@ -22,6 +24,7 @@ stages:
       VERTICAL_VISTAS: 1
       VERDANT_VALLEYS: 1
       BLACK_FOREST: 1
+      FLOWERING_FOREST: 1
       _pillow_plains: 1
       _secluded_valleys: 1
       # LAND_MEDIUM_A: 1
@@ -39,5 +42,6 @@ stages:
       CARVING_CREAKS: 1
       DESERT: 1
       SALT_FLATS: 1
+      OVERGROWN_CLIFFS: 1
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1
