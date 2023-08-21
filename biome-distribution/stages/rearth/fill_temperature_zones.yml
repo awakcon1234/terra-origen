@@ -38,5 +38,6 @@ stages:
       LUSH_LOOPS: 1
       CARVING_CREAKS: 1
       DESERT: 1
+      SALT_FLATS: 1
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1

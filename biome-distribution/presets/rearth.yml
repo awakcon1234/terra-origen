@@ -33,8 +33,13 @@ biomes:
         - << biome-distribution/stages/rearth/spread_temperature_zones.yml:stages
         - << biome-distribution/stages/rearth/fill_temperature_zones.yml:stages
         - << biome-distribution/stages/rearth/special/border_biomes.yml:stages
-        - << biome-distribution/stages/rearth/add_rivers.yml:stages
         
+        - type: FRACTAL_EXPAND
+          sampler:
+            type: WHITE_NOISE
+        - type: FRACTAL_EXPAND
+          sampler:
+            type: WHITE_NOISE
         - type: FRACTAL_EXPAND
           sampler:
             type: WHITE_NOISE
@@ -44,6 +49,9 @@ biomes:
         - type: SMOOTH
           sampler:
             type: WHITE_NOISE
+
+        - << biome-distribution/stages/rearth/add_rivers.yml:stages
+        
         - type: SMOOTH
           sampler:
             type: WHITE_NOISE
