@@ -21,6 +21,7 @@ stages:
       MURKY_MARSHLANDS: 1
       VERTICAL_VISTAS: 1
       VERDANT_VALLEYS: 1
+      BLACK_FOREST: 1
       _pillow_plains: 1
       _secluded_valleys: 1
       # LAND_MEDIUM_A: 1
@@ -36,5 +37,6 @@ stages:
       MESA_MONUMENTS: 1
       LUSH_LOOPS: 1
       CARVING_CREAKS: 1
+      DESERT: 1
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1
