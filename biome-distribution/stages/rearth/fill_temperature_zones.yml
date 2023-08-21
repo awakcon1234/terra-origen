@@ -7,7 +7,7 @@ stages:
       return: CellValue
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
-      LAND_COLD_A: 1
+      FROSTY_FINGERS: 1
       LAND_COLD_B: 1
   - type: REPLACE
     from: medium
