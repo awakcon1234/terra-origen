@@ -11,7 +11,7 @@ stages:
       COLD_STEPPE: 1
       SNOWY_MEADOW: 1
       SNOWY_MOUNTAINS: 1
-      FROZEN_VISTAS: 1
+      MOUNTAIN_MIRRORS: 1
   - type: REPLACE
     from: medium
     sampler:

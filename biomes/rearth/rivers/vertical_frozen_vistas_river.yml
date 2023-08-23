@@ -1,6 +1,6 @@
-id: FROZEN_VISTAS_RIVER
+id: MOUNTAIN_MIRRORS_RIVER
 type: BIOME
-extends: [RIVER_FROZEN, FROZEN_VISTAS]
+extends: [RIVER_FROZEN, MOUNTAIN_MIRRORS]
 
 original-noise: &originalNoise $biomes/rearth/base/eq_terrace_mountain.yml:terrain.sampler # Original noise to be turned into river
 
