@@ -92,14 +92,13 @@ features:
   global-preprocessors:
     - LAVA_FLOOR
     - UNDERGROUND_LAVA_COLUMNS
-    - WOOD_WATER_DAM
+    - CONTAIN_FLOATING_WATER
     - CAVE_GLOW_LICHEN
     - TEXTURED_STONE_SLANT
   trees:
     - LOW_EVERGREEN_TREES
   preprocessors:
     - LUSH_CAVE_WATER_POOLS
-    - CONTAIN_FLOATING_WATER
   flora:
     - GRASS
     - LOW_GRASS

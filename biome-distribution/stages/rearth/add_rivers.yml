@@ -15,6 +15,12 @@ stages:
       VISTAS_RIVER : 1
     sampler: *riverSampler
   - type: REPLACE
+    from: USE_FROZEN_VISTA_RIVER
+    to:
+      SELF: 1
+      FROZEN_VISTAS_RIVER : 1
+    sampler: *riverSampler
+  - type: REPLACE
     from: USE_LOOPS_RIVER
     to:
       SELF: 1

@@ -1,17 +1,12 @@
-id: MOUNTAIN_RIVER_FROZEN
+id: FROZEN_VISTAS_RIVER
 type: BIOME
-extends: [RIVER_FROZEN, SNOWY_MOUNTAINS]
+extends: [RIVER_FROZEN, FROZEN_VISTAS]
 
-original-noise: &originalNoise $biomes/abstract/terrain/land/eq_land.yml:terrain.sampler # Original noise to be turned into river
-
-features:
-  river-decoration:
-    - CEILING_ICICLES
-    - CLAY_DEPOSITS
+original-noise: &originalNoise $biomes/rearth/base/eq_terrace_mountain.yml:terrain.sampler # Original noise to be turned into river
 
 vars: &variables
-  ceilingHeight:    80  # Base Y level of the ceiling
-  ceilingVariation: 2   # How many blocks upwards ceiling height can vary
+  ceilingHeight:    90  # Base Y level of the ceiling
+  ceilingVariation: 0   # How many blocks upwards ceiling height can vary
   originalStrength: 1   # How much the original noise contributes to ceiling shape
   ceilingSpikeVar:  18  # How many blocks down ceiling spikes will go
   
@@ -44,7 +39,7 @@ terrain:
           ceilingEq: # Controls the shape of the ceiling
             type: EXPRESSION
             dimensions: 3
-            expression: -y + ceilingHeight + (noise(x, z)+1)/2 * ceilingVariation
+            expression: -y + ceilingHeight + (noise(x, z)+1)/2 * ceilingVariation + (spikes(x, z)+1)/2 * -ceilingSpikeVar
             variables: *variables
             samplers:
               noise:
@@ -61,7 +56,7 @@ terrain:
       bottomEq: # Bottom half of river - makes up the river bed
         type: EXPRESSION
         dimensions: 3
-        expression: -y + floorHeight - if(y > floorHeight,floorStrength*(-(-y + floorHeight))^2,0) + (noise(x, z)+1)/2 * floorVariation
+        expression: -y + floorHeight - if(y > floorHeight,floorStrength*(-(-y + floorHeight))^2,0) + (noise(x, z)+1)/2 * floorVariation + (spikes(x, z)+floorSpikeBias)/2 * floorSpikeVar^2
         variables: *variables
         samplers:
           noise:
@@ -69,3 +64,8 @@ terrain:
             type: OPEN_SIMPLEX_2
             frequency: 0.03
           spikes: *spikes # Use same noise from ceiling spikes
+
+features:
+  river-decoration:
+    - CEILING_ICICLES
+    - CLAY_DEPOSITS

@@ -11,6 +11,7 @@ stages:
       COLD_STEPPE: 1
       SNOWY_MEADOW: 1
       SNOWY_MOUNTAINS: 1
+      FROZEN_VISTAS: 1
   - type: REPLACE
     from: medium
     sampler:
@@ -42,6 +43,7 @@ stages:
       CARVING_CREAKS: 1
       DESERT: 1
       SALT_FLATS: 1
+      DESERT_SPIKES_GOLD: 1
       OVERGROWN_CLIFFS: 1
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1

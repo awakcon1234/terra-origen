@@ -2,7 +2,7 @@ id: VISTAS_RIVER
 type: BIOME
 extends: [RIVER, VERTICAL_VISTAS]
 
-original-noise: &originalNoise $biomes/rearth/variants/vertical_vistas.yml:terrain.sampler # Original noise to be turned into river
+original-noise: &originalNoise $biomes/rearth/base/eq_terrace_mountain.yml:terrain.sampler # Original noise to be turned into river
 
 vars: &variables
   ceilingHeight:    90  # Base Y level of the ceiling
