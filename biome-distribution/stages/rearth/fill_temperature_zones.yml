@@ -26,6 +26,7 @@ stages:
       VERDANT_VALLEYS: 1
       BLACK_FOREST: 1
       FLOWERING_FOREST: 1
+      TALL_TIMBERLAND: 1
       _pillow_plains: 1
       _secluded_valleys: 1
       # LAND_MEDIUM_A: 1
