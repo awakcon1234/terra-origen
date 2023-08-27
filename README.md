@@ -30,60 +30,74 @@ Here is a full list of all biomes used in PLACEHOLDER. Note that some biomes are
 
 ### Land
 
-** Black Forest **
+**Black Forest**
 
-Inspired by the german black forest, this mountainy biome has is covered in spruce and birch trees. Also included some flat clearing spread throughout the forest. Some of those clearing have a small change of turning into a mountain lake.
+> ![2023-08-27_16 23 50](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/6e802a05-1993-4720-a23c-64bbfbe99782)
+Inspired by the german black forest, this mountainy biome has is covered in spruce and birch trees. Includes some flat clearing spread throughout the forest. Some of those clearing have a small change of turning into a mountain lake.
 
-** Carving Creaks **
+**Carving Creaks**
 
-An environment made of very high terracotta plateous, with large canyons and rivers cutting through it. The edges also have a slight terrace visisble.
+> ![2023-08-07_23 58 53](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/73406873-ccb2-4d3c-aa7a-71e86f8a39dd)
+An environment made of very high terracotta plateous, with large canyons and rivers cutting through it. The edges also have a slight terrace visible.
 
-** Fossilized Fenlands **
+**Fossilized Fenlands**
 
+> ![2023-08-09_23 40 35](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c8fb50da-f7cd-4222-8200-b8dd74e2b6f6)
 The dinosaur biome. Mostly flat with some segmented elevations. Can spawn dinosaur fossils, which usually have multiple "rib" segments and a chance to include a giant head on the front.
 
-** Frosty Fingers **
+**Frosty Fingers**
 
+> ![2023-08-27_16 40 21](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/44ad0eb0-71d7-4aa4-a6b4-596d9fd4e32c)
 Cold environment, with weaving snow and ice dunes. Also includes large snow spikes in the valleys between the snow dunes.
 
-** Mountain Mirrors **
+**Mountain Mirrors**
 
+> ![2023-08-27_14 59 37](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/21589086-f37c-4209-9e0d-7c980d9b6b64)
 The mountain mirrors consist of huge mountains, with multiple terrace layers and steep walls inbetween them. The walls are covered with ice and can result in a mirror-like appearance. Between mountains there often appear frozen lakes. Also has frozen rivers that go through the higher parts of mountains using frozen cave rivers. On the flatter parts of the terrain there can spawn snow-covered trees and ice spikes.
 
-** Canopy Cascades **
+**Canopy Cascades**
 
+> ![2023-08-27_12 22 30](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/d126e85c-8670-47cb-a774-27d4aba5bf81)
 Jungle version of the mountain mirrors. Features huge mountains with terraces along it. Usually covered with large jungle trees and a few lush lakes at the bottom.
 
-** Lush Loops **
+**Lush Loops**
 
+> ![2023-08-23_22 49 45](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/005a6e8c-fd1c-4433-b502-8ae629c765ae)
 A lush jungle environment, with massive eye-catching stone arches looping through the skies.
 
-** Mesa Monuments **
+**Mesa Monuments**
 
+> ![2023-07-26_23 29 34](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/cfb8098b-4cab-4e1d-b442-b0d2372fa024)
 Covered by giant terracotta pillars, the mesa monuments biome is a warm badlands / desert mix. The main feature are the big terracotta pillars in it, which can reach up to 100 blocks into the sky.
 
-** Murky Marshlands **
+**Murky Marshlands**
 
+> ![2023-08-27_14 58 22](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c3b66b84-9597-46b0-99f9-fa0d2b7db7d0)
 Imagine a unique and exotic rendition of the familiar vanilla swamp. This variant is blanketed by imposing, shadowy trees that exude a mysterious aura. The ground seamlessly blends the realms of water and land, creating a captivating environment. On the land, the terrain showcases a series of interconnected, level expanses that intertwine, each marked by sharp transitions in elevation.
 
-** Pillow Plains **
+**Pillow Plains**
 
+> ![2023-08-27_15 04 35](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c3ead62b-bbfa-495e-b9d4-0fe8805ecf64)
 Split into a high border segment and a low inner segment, the pillow plains is marked by its small pillars through a green valley. Due to the low height of the inner segment, there are no rivers in this biome, though this will be changed in the future by adding a special low river variant.
 
-** Redwood Forests **
+**Redwood Forests**
 
+> ![2023-08-23_22 31 10](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/685e7708-0a6a-48ff-ac26-cdfbb3e49d0c)
 The Redwood Forests are covered by giant redwood trees. Similar to the black forests, they also feature flat clearing and lakes in between their forest-covered mountains.
 
-** Secluded Valley **
+**Secluded Valley**
 
+> ![2023-07-28_11 47 03](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/9d9705c2-fbcb-4665-9a89-4e44121b724d)
 At a first glance, the secluded valley is just a large and flat sunflower field. However, there are also huge valleys with a small entrance hidden spread throughout this biome. The valleys containt cherry trees and have a small chance to spawn a giant cherry tree in the middle.
 
-** Verdant Valleys **
+**Verdant Valley**
 
+> ![2023-08-27_15 07 02](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/4433a0f4-e33b-4568-a416-b704ebd32ba0)
 The verdant valley is a mostly flat valley with sparse acacia trees. The valley is surrounded by smaller hills which usually have small steep patches with a darker surface.
 
-** Vertical Vistas **
+**Vertical Vistas**
 
+> ![2023-08-23_22 48 15](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/9c2b2375-ad04-4974-bf98-e9599583479c)
 Huge, towering green mountains. The often are high enough that their peak is covered in snow. At the bottom of these mountains, there is also often a small lake. Few trees and boulders can be found on the surface.
 
 ** WIP **
@@ -92,16 +106,18 @@ More biomes will follow soon.
 
 ### Cave
 
-** Inferno Isles **
+**Inferno Isles**
 
+> ![2023-08-27_15 00 32](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c70a92a2-e8eb-4182-83e4-0ff51526e3ba)
 Giant cave biome that usually is found around -20 to +40. Contains a big lava lake with interconnected platforms hanging on chains over it. The cave roof is covered with glowing plants.
 
 ** TODO **
 
 ### Coast
 
-** Marine Monolits **
+**Marine Monolits**
 
+> ![2023-08-23_22 45 49](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/29eadfc2-169a-4385-93c2-a2adad62ade7)
 Towering cliffs biome, only found at the bigger coasts. The biome has a mostly flat area, which is held by large white pillars that reach deep into the water.
 
 ** TODO **
@@ -112,19 +128,20 @@ Towering cliffs biome, only found at the bigger coasts. The biome has a mostly f
 
 ### Special
 
-** Sinkholes **
+**Sinkholes**
 
+> ![2023-08-27_14 51 16](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/27346dee-53c4-4ebd-a577-e12d8e915f43)
 Sinkhole can be found anywhere in the world, ignoring the usual biome cell spawns. However, they are quite rate. They reach down to Y -40 and have steep cliffs and are usually streched at an angle. There currently are 3 sinkhole variations:
 
-** Jungle Sinkhole**
+**Jungle Sinkhole**
 
 Contains a warm surface with big jungle trees covering it.
 
-** Forest Sinkhole **
+**Forest Sinkhole**
 
 Contains mossy stone walls and a diverse mix of trees covering the bottom of the sinkhole.
 
-** Frozen Sinkhole **
+**Frozen Sinkhole**
 
 Cold version of the sinkhole. Has a snowy surface with ice spikes on it.
 
