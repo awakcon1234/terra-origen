@@ -35,7 +35,6 @@ ocean:
 
 features:
   slabs:
-    - STONE_SLABS
     - SNOW_LAYERS
   preprocessors:
     - POWDER_SNOW_DEPOSITS

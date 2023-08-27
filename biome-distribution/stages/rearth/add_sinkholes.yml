@@ -1,0 +1,86 @@
+vars: &variables
+  stretchFactor: 2.5
+  angle: 0.435
+
+sinkholeSampler: &sinkholeSampler
+  type: EXPRESSION
+  variables: *variables
+  expression: |
+    warpedCells(rotate(x, z, angle), rotate(z, x, angle))
+  functions:
+    rotate:
+      arguments: [x, y, rad]
+      expression: x * cos(rad) - y * sin(rad)
+  samplers:
+    warpedCells:
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 12
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.015
+      sampler:
+        dimensions: 2
+        type: EXPRESSION
+        variables: *variables
+        expression: |
+          if (-flatCells(x / stretchFactor, z) - 0.83 > 0, flatCellsVariation(x / stretchFactor, z), -1)
+        samplers: &samplers
+          flatCells:
+            dimensions: 2
+            type: CELLULAR
+            frequency: 0.0025
+            jitter: 0.3
+            distance: Euclidean
+          flatCellsVariation:
+            dimensions: 2
+            type: CELLULAR
+            frequency: 0.0025
+            jitter: 0.3
+            return: CellValue
+
+sinkholeSamplerOuter: &sinkholeSamplerOuter
+  type: EXPRESSION
+  variables: *variables
+  expression: |
+    warpedCells(rotate(x, z, angle), rotate(z, x, angle))
+  functions:
+    rotate:
+      arguments: [x, y, rad]
+      expression: x * cos(rad) - y * sin(rad)
+  samplers:
+    warpedCells:
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 12
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 0.015
+      sampler:
+        dimensions: 2
+        type: EXPRESSION
+        variables: *variables
+        expression: |
+          // positive / higher = solid
+          if (-flatCells(x / stretchFactor, z) - 0.83 + 0.013 > 0, flatCellsVariation(x / stretchFactor, z), -1)
+        samplers: *samplers
+
+stages:
+  - type: REPLACE
+    from: ALL
+    to:
+      SELF: 10
+      SINKHOLE_OUTER : 3
+    sampler: *sinkholeSamplerOuter
+    range: &range
+      min: -55
+      max: 319
+  - type: REPLACE
+    from: ALL
+    to:
+      SELF: 10
+      SINKHOLE_FROZEN : 1
+      SINKHOLE_FOREST : 1
+      SINKHOLE_JUNGLE : 1
+    sampler: *sinkholeSampler
+    range: *range

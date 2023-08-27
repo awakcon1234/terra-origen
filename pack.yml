@@ -41,8 +41,8 @@ addons:
 
 # Default biome distribution
 # biomes: $biome-distribution/presets/default.yml:biomes
-# biomes: $biome-distribution/presets/rearth.yml:biomes
-biomes: $biome-distribution/presets/single.yml:biomes
+biomes: $biome-distribution/presets/rearth.yml:biomes
+# biomes: $biome-distribution/presets/single.yml:biomes
 
 # ---
 # Population stages
@@ -113,6 +113,7 @@ functions:
     - math/functions/terrace.yml:functions
     - math/functions/interpolation.yml:functions
     - math/functions/maskSmooth.yml:functions
+    - math/functions/clamp.yml:functions
 
 samplers:
   "<<":

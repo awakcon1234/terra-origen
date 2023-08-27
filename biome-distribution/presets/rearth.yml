@@ -56,4 +56,6 @@ biomes:
           sampler:
             type: WHITE_NOISE
 
+        - << biome-distribution/stages/rearth/add_sinkholes.yml:stages
+
             

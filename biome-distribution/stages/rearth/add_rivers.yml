@@ -39,6 +39,12 @@ stages:
       MOUNTAIN_RIVER_FROZEN: 1
     sampler: *riverSampler
   - type: REPLACE
+    from: USE_JUNGLE_VISTA_RIVER
+    to:
+      SELF: 1
+      VERTICAL_JUNGLE_RIVER: 1
+    sampler: *riverSampler
+  - type: REPLACE
     from: USE_RIVER
     to:
       SELF: 1

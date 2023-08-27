@@ -11,7 +11,7 @@ colors:
   water-fog: 0x1e97f2
 
 tags:
-  - USE_FROZEN_VISTA_RIVER
+  - USE_JUNGLE_VISTA_RIVER
 
 palette:
   - GRASS: $meta.yml:top-y
