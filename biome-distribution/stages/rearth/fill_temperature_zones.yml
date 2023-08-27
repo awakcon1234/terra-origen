@@ -46,5 +46,6 @@ stages:
       SALT_FLATS: 1
       DESERT_SPIKES_GOLD: 1
       OVERGROWN_CLIFFS: 1
+      CANOPY_CASCADES: 1
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1

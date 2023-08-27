@@ -1,3 +1,3 @@
 biomes:
   type: SINGLE
-  biome: REDWOOD_HILLS # The singular biome that will be used.
+  biome: CANOPY_CASCADES # The singular biome that will be used.
