@@ -1,5 +1,5 @@
 biomeSpread:
-  cellDistance: 300
+  cellDistance: 450
   cellJitter: 0.8
   riverScale: 0.0013
   borderBiomes:
