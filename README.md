@@ -16,27 +16,119 @@ Most top level settings, such as biome and river sizes, can be found in the file
 
 ## Biome distribution
 
-A lot of work has gone into making sure that biomes are in the desired size and form. This allows designing landform features in biomes with somewhat specific sizes and then makes sure that the terrain's themselfes are not too big/small or squashed.
+Considerable effort has been invested in ensuring that biomes are crafted to the desired size and shape. This enables the design of landform features within biomes of relatively specific dimensions, while also preventing the terrain itself from becoming overly large, small, or distorted.
 
-On a basic level, terrains are placed using cellular noise. This means that most biomes have a similar size and form. Those cells are then split into land and ocean cells, based on a continnental value *in the middle of the cell*. This means that land cells close to the ocean will keep their full size, without being cut off at the point where the "continental" equation would transition into oceans. The same also applies to ocean biomes. 
+At a fundamental level, biomes are established using cellular noise, resulting in a uniform size and shape for most biomes. These cellular units are subsequently categorized into land and ocean cells, determined by a continental value situated at the center of each cell. This approach ensures that land cells adjacent to oceans maintain their full size, without being truncated at the point where the "continental" equation would transition into ocean cells. This principle is also extended to ocean biomes.
 
-To find and place coast biomes, the edge between the cells of ocean and land are used. Then the coasts themselfes are split into cells aswell, however using a different seed. The coasts are also split into 3 categories: none, small and wide, resulting in some coasts either being not there at all (the oceans goes directly against the land biomes), or being small or very wide.
+The identification and placement of coastal biomes involve utilizing the boundary between ocean and land cells. Subsequently, the coastal areas are divided into discrete units using a distinct seed. Furthermore, coastal zones are classified into three categories: none, narrow, and wide. This results in some coastlines either being absent altogether (e.g. the ocean directly borders land biomes) or being categorized as narrow or significantly wider.
 
-Rivers are spread on all biomes that have the "USE_RIVER" tag, and a generally a bit more wide and deep than vanilla rivers, making it easier to travel via boat. Some biomes also have river variants, which usually generate the river as a caved version through larger mountains so the river doesn't have to fully cut through large mountains.
+Rivers are added throughout all biomes tagged with "USE_RIVER". These rivers are generally broader and deeper than standard vanilla rivers, allowing smoother boat navigation. Certain biomes also feature river variants, often generating rivers that meander through cavernous sections of large mountains, thus negating the need for the river to cut entirely through these substantial landforms.
 
 ## Currently available biomes
 
-Here is a full list of all biomes used in <pack name>
+Here is a full list of all biomes used in <pack name>. Note that some biomes are already included in the default terra overworld config pack, and will be marked as such.
 
 ### Land
 
+** Black Forest **
+
+Inspired by the german black forest, this mountainy biome has is covered in spruce and birch trees. Also included some flat clearing spread throughout the forest. Some of those clearing have a small change of turning into a mountain lake.
+
+** Carving Creaks **
+
+An environment made of very high terracotta plateous, with large canyons and rivers cutting through it. The edges also have a slight terrace visisble.
+
+** Fossilized Fenlands **
+
+The dinosaur biome. Mostly flat with some segmented elevations. Can spawn dinosaur fossils, which usually have multiple "rib" segments and a chance to include a giant head on the front.
+
+** Frosty Fingers **
+
+Cold environment, with weaving snow and ice dunes. Also includes large snow spikes in the valleys between the snow dunes.
+
+** Mountain Mirrors **
+
+The mountain mirrors consist of huge mountains, with multiple terrace layers and steep walls inbetween them. The walls are covered with ice and can result in a mirror-like appearance. Between mountains there often appear frozen lakes. Also has frozen rivers that go through the higher parts of mountains using frozen cave rivers. On the flatter parts of the terrain there can spawn snow-covered trees and ice spikes.
+
+** Canopy Cascades **
+
+Jungle version of the mountain mirrors. Features huge mountains with terraces along it. Usually covered with large jungle trees and a few lush lakes at the bottom.
+
+** Lush Loops **
+
+A lush jungle environment, with massive eye-catching stone arches looping through the skies.
+
+** Mesa Monuments **
+
+Covered by giant terracotta pillars, the mesa monuments biome is a warm badlands / desert mix. The main feature are the big terracotta pillars in it, which can reach up to 100 blocks into the sky.
+
+** Murky Marshlands **
+
+Imagine a unique and exotic rendition of the familiar vanilla swamp. This variant is blanketed by imposing, shadowy trees that exude a mysterious aura. The ground seamlessly blends the realms of water and land, creating a captivating environment. On the land, the terrain showcases a series of interconnected, level expanses that intertwine, each marked by sharp transitions in elevation.
+
+** Pillow Plains **
+
+Split into a high border segment and a low inner segment, the pillow plains is marked by its small pillars through a green valley. Due to the low height of the inner segment, there are no rivers in this biome, though this will be changed in the future by adding a special low river variant.
+
+** Redwood Forests **
+
+The Redwood Forests are covered by giant redwood trees. Similar to the black forests, they also feature flat clearing and lakes in between their forest-covered mountains.
+
+** Secluded Valley **
+
+At a first glance, the secluded valley is just a large and flat sunflower field. However, there are also huge valleys with a small entrance hidden spread throughout this biome. The valleys containt cherry trees and have a small chance to spawn a giant cherry tree in the middle.
+
+** Verdant Valleys **
+
+The verdant valley is a mostly flat valley with sparse acacia trees. The valley is surrounded by smaller hills which usually have small steep patches with a darker surface.
+
+** Vertical Vistas **
+
+Huge, towering green mountains. The often are high enough that their peak is covered in snow. At the bottom of these mountains, there is also often a small lake. Few trees and boulders can be found on the surface.
+
+** WIP **
+
+More biomes will follow soon.
+
 ### Cave
+
+** Inferno Isles **
+
+Giant cave biome that usually is found around -20 to +40. Contains a big lava lake with interconnected platforms hanging on chains over it. The cave roof is covered with glowing plants.
+
+** TODO **
 
 ### Coast
 
+** Marine Monolits **
+
+Towering cliffs biome, only found at the bigger coasts. The biome has a mostly flat area, which is held by large white pillars that reach deep into the water.
+
+** TODO **
+
 ### Ocean
 
+** TODO **
+
 ### Special
+
+** Sinkholes **
+
+Sinkhole can be found anywhere in the world, ignoring the usual biome cell spawns. However, they are quite rate. They reach down to Y -40 and have steep cliffs and are usually streched at an angle. There currently are 3 sinkhole variations:
+
+** Jungle Sinkhole**
+
+Contains a warm surface with big jungle trees covering it.
+
+** Forest Sinkhole **
+
+Contains mossy stone walls and a diverse mix of trees covering the bottom of the sinkhole.
+
+** Frozen Sinkhole **
+
+Cold version of the sinkhole. Has a snowy surface with ice spikes on it.
+
+** TODO **
 
 ## Navigating through the config
 
