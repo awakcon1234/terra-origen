@@ -1,9 +1,9 @@
-# WIP Config pack
+![Origen](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/0657306f-4f00-4003-b3da-33e32e99e855)
 
 An overworld configuration pack for terra 6.4 and higher. It is based on the default terra overworld config pack v2.0, which you can find 
 [here](https://github.com/PolyhedralDev/TerraOverworldConfig/tree/2.0). A lot of content is used from the default pack, especially regarding the terrain features such as trees, flora and palettes.
 
-PLACEHOLDER focuses on adding a new and more creative / diverse terrain generation, without using any new blocks or items. This means that it is compatible with vanilla installations. 
+Origen focuses on adding a new and more creative / diverse terrain generation, without using any new blocks or items. This means that it is compatible with vanilla installations. 
 
 You can find Terra - the main project this config pack is designed for
 [here](https://github.com/PolyhedralDev/Terra).
@@ -26,7 +26,7 @@ Rivers are added throughout all biomes tagged with "USE_RIVER". These rivers are
 
 ## Currently available biomes
 
-Here is a full list of all biomes used in PLACEHOLDER. Note that some biomes are already included in the default terra overworld config pack, and will be marked as such.
+Here is a full list of all biomes used in Origen. Note that some biomes are already included in the default terra overworld config pack, and will be marked as such.
 
 ### Land
 
