@@ -80,10 +80,10 @@ Imagine a unique and exotic rendition of the familiar vanilla swamp. This varian
 > ![2023-08-27_15 04 35](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c3ead62b-bbfa-495e-b9d4-0fe8805ecf64)
 Split into a high border segment and a low inner segment, the pillow plains is marked by its small pillars through a green valley. Due to the low height of the inner segment, there are no rivers in this biome, though this will be changed in the future by adding a special low river variant.
 
-**Redwood Forests**
+**Tall Timberland**
 
 > ![2023-08-23_22 31 10](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/685e7708-0a6a-48ff-ac26-cdfbb3e49d0c)
-The Redwood Forests are covered by giant redwood trees. Similar to the black forests, they also feature flat clearing and lakes in between their forest-covered mountains.
+These mountains are covered by giant redwood trees. Similar to the black forests, they also feature flat clearing and lakes in between their forest-covered mountains.
 
 **Secluded Valley**
 
