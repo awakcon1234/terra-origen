@@ -96,8 +96,6 @@ features:
   trees:
     - VALLEY_GIANT
     - VALLEY_SAKURA_TREES
-  preprocessors:
-    - LUSH_CAVE_WATER_POOLS
   flora:
     - LARGE_LEAF_VINES_UNDERGROUND
     - MOSS_CARPET

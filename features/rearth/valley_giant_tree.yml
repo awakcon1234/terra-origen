@@ -8,15 +8,15 @@ distributor:
     type: CELLULAR
     frequency: 0.0065
     jitter: 0.3
-  threshold: -0.9996 # magic number to hit exactly one block in the middle of the cell
+  threshold: -0.998 # magic number to hit exactly one block in the middle of the cell
 
 locator:
   type: AND
   locators:
     - type: SURFACE
       range: &range
-        min: 2
-        max: 9
+        min: 1
+        max: 10
     - type: PATTERN
       range: *range
       pattern:
