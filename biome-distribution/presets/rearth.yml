@@ -6,7 +6,7 @@ biomes:
     - << biome-distribution/extrusions/add_deep_dark.yml:extrusions
   provider:
     type: PIPELINE
-    resolution: 4
+    resolution: 8
     blend:
       amplitude: 6
       sampler:
