@@ -16,7 +16,7 @@ Most top level settings, such as biome and river sizes, can be found in the file
 
 ## Biome distribution
 
-Considerable effort has been invested in ensuring that biomes are crafted to the desired size and shape. This enables the design of landform features within biomes of relatively specific dimensions, while also preventing the terrain itself from becoming overly large, small, or distorted.
+Considerable effort has been invested in ensuring that biomes are renderer in the desired size and shape. This enables the design of landform features within biomes of relatively specific dimensions, while also preventing the terrain itself from becoming overly large, small, or distorted.
 
 At a fundamental level, biomes are established using cellular noise, resulting in a uniform size and shape for most biomes. These cellular units are subsequently categorized into land and ocean cells, determined by a continental value situated at the center of each cell. This approach ensures that land cells adjacent to oceans maintain their full size, without being truncated at the point where the "continental" equation would transition into ocean cells. This principle is also extended to ocean biomes.
 
@@ -33,7 +33,7 @@ Here is a full list of all biomes used in Origen. Note that some biomes are alre
 **Black Forest**
 
 > ![2023-08-27_16 23 50](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/6e802a05-1993-4720-a23c-64bbfbe99782)
-Inspired by the german black forest, this mountainy biome has is covered in spruce and birch trees. Includes some flat clearing spread throughout the forest. Some of those clearing have a small change of turning into a mountain lake.
+Inspired by the german black forest, this mountainy biome has is covered in spruce and birch trees. Includes flat clearings spread throughout the forest. Some of those clearings have a small chance of turning into a mountain lake.
 
 **Carving Creaks**
 
