@@ -69,7 +69,7 @@ stages:
   - type: REPLACE
     from: ALL
     to:
-      SELF: 15
+      SELF: 18
       SINKHOLE_OUTER : 3
     sampler: *sinkholeSamplerOuter
     range: &range
@@ -78,7 +78,7 @@ stages:
   - type: REPLACE
     from: ALL
     to:
-      SELF: 15
+      SELF: 18
       SINKHOLE_FROZEN : 1
       SINKHOLE_FOREST : 1
       SINKHOLE_JUNGLE : 1

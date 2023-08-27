@@ -1,5 +1,5 @@
 stages:
-  - type: REPLACE # add small coast placeholders
+  - type: REPLACE # add small coast
     from: coast_small
     sampler:
       type: CELLULAR
@@ -10,10 +10,10 @@ stages:
     to:
       # COAST_MEDIUM_A: 1
       SHALE_BEACH: 1
-      PALM_BEACH: 1
-      BEACH: 1
+      PALM_BEACH: 2
+      BEACH: 3
       MANGROVE_SWAMP: 1
-  - type: REPLACE # add big coast placeholders
+  - type: REPLACE # add big coast
     from: coast_wide
     sampler:
       type: CELLULAR
@@ -22,7 +22,6 @@ stages:
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
       salt: 8726345
     to:
-      # COAST_MEDIUM_B: 1
-      TEMPERATE_SEA_ARCHES: 1
-      PALM_BEACH: 1
+      TEMPERATE_SEA_ARCHES: 2
+      PALM_BEACH: 2
       MARINE_MONOLITHS: 1

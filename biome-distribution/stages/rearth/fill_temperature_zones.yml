@@ -7,11 +7,11 @@ stages:
       return: CellValue
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
-      FROSTY_FINGERS: 1
-      COLD_STEPPE: 1
+      FROSTY_FINGERS: 2
+      COLD_STEPPE: 2
       SNOWY_MEADOW: 1
       SNOWY_MOUNTAINS: 1
-      MOUNTAIN_MIRRORS: 1
+      MOUNTAIN_MIRRORS: 2
   - type: REPLACE
     from: medium
     sampler:
@@ -20,14 +20,14 @@ stages:
       return: CellValue
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
-      FOSSILIZED_FENLANDS: 1
-      MURKY_MARSHLANDS: 1
-      VERTICAL_VISTAS: 1
-      VERDANT_VALLEYS: 1
-      BLACK_FOREST: 1
+      FOSSILIZED_FENLANDS: 3
+      MURKY_MARSHLANDS: 2
+      VERTICAL_VISTAS: 2
+      VERDANT_VALLEYS: 3
+      BLACK_FOREST: 2
       FLOWERING_FOREST: 1
-      TALL_TIMBERLAND: 1
-      _pillow_plains: 1
+      TALL_TIMBERLAND: 2
+      _pillow_plains: 2
       _secluded_valleys: 1
       # LAND_MEDIUM_A: 1
       # LAND_MEDIUM_B: 1
@@ -39,13 +39,13 @@ stages:
       return: CellValue
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
-      MESA_MONUMENTS: 1
-      LUSH_LOOPS: 1
-      CARVING_CREAKS: 1
-      DESERT: 1
+      MESA_MONUMENTS: 3
+      LUSH_LOOPS: 2
+      CARVING_CREAKS: 4
+      DESERT: 4
       SALT_FLATS: 1
-      DESERT_SPIKES_GOLD: 1
-      OVERGROWN_CLIFFS: 1
-      CANOPY_CASCADES: 1
+      DESERT_SPIKES_GOLD: 2
+      OVERGROWN_CLIFFS: 3
+      CANOPY_CASCADES: 3
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1

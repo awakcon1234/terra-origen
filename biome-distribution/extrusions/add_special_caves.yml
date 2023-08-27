@@ -22,7 +22,7 @@ extrusions:
           salt: 24
           return: CellValue
     to:
-      - SELF: 3
+      - SELF: 5
       - INFERNO_ISLES: 1
     range:
       min: -30
