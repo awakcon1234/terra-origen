@@ -10,3 +10,7 @@ stages:
       OCEAN: 1
       DEEP_OCEAN: 1
       TROPICAL_OCEAN: 1
+      TROPICAL_DEEP_OCEAN: 1
+      CORAL_OCEAN: 1
+      ICEBERG_OCEAN: 1
+      FROZEN_OCEAN: 1
