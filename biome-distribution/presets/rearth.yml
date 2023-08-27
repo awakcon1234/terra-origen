@@ -27,13 +27,13 @@ biomes:
           ocean: 1
           land: 1
       stages:
-        - << biome-distribution/stages/rearth/coasts.yml:stages
-        - << biome-distribution/stages/rearth/fill_coasts.yml:stages
-        - << biome-distribution/stages/rearth/oceans.yml:stages
-        - << biome-distribution/stages/rearth/spread_temperature_zones.yml:stages
-        - << biome-distribution/stages/rearth/fill_temperature_zones.yml:stages
-        - << biome-distribution/stages/rearth/special/border_biomes.yml:stages
-        
+        - << biome-distribution/stages/coasts.yml:stages
+        - << biome-distribution/stages/fill_coasts.yml:stages
+        - << biome-distribution/stages/oceans.yml:stages
+        - << biome-distribution/stages/spread_temperature_zones.yml:stages
+        - << biome-distribution/stages/fill_temperature_zones.yml:stages
+        - << biome-distribution/stages/special/border_biomes.yml:stages
+
         - type: FRACTAL_EXPAND
           sampler:
             type: WHITE_NOISE
@@ -50,12 +50,12 @@ biomes:
           sampler:
             type: WHITE_NOISE
 
-        - << biome-distribution/stages/rearth/add_rivers.yml:stages
+        - << biome-distribution/stages/add_rivers.yml:stages
         
         - type: SMOOTH
           sampler:
             type: WHITE_NOISE
 
-        - << biome-distribution/stages/rearth/add_sinkholes.yml:stages
+        - << biome-distribution/stages/special/add_sinkholes.yml:stages
 
             

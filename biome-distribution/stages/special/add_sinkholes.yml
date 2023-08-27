@@ -1,6 +1,8 @@
 vars: &variables
-  stretchFactor: 2.5
-  angle: 0.435
+  stretchFactor: ${customization.yml:biomeSpread.sinkHoles.stretchFactor}
+  angle: ${customization.yml:biomeSpread.sinkHoles.angle}
+  size: ${customization.yml:biomeSpread.sinkHoles.size}
+  borderSize: ${customization.yml:biomeSpread.sinkHoles.borderSize}
 
 sinkholeSampler: &sinkholeSampler
   type: EXPRESSION
@@ -24,18 +26,18 @@ sinkholeSampler: &sinkholeSampler
         type: EXPRESSION
         variables: *variables
         expression: |
-          if (-flatCells(x / stretchFactor, z) - 0.83 > 0, flatCellsVariation(x / stretchFactor, z), -1)
+          if (-flatCells(x / stretchFactor, z) - size > 0, flatCellsVariation(x / stretchFactor, z), -1)
         samplers: &samplers
           flatCells:
             dimensions: 2
             type: CELLULAR
-            frequency: 0.0025
+            frequency: ${customization.yml:biomeSpread.sinkHoles.frequency}
             jitter: 0.3
             distance: Euclidean
           flatCellsVariation:
             dimensions: 2
             type: CELLULAR
-            frequency: 0.0025
+            frequency: ${customization.yml:biomeSpread.sinkHoles.frequency}
             jitter: 0.3
             return: CellValue
 
@@ -62,7 +64,7 @@ sinkholeSamplerOuter: &sinkholeSamplerOuter
         variables: *variables
         expression: |
           // positive / higher = solid
-          if (-flatCells(x / stretchFactor, z) - 0.83 + 0.013 > 0, flatCellsVariation(x / stretchFactor, z), -1)
+          if (-flatCells(x / stretchFactor, z) - size + borderSize > 0, flatCellsVariation(x / stretchFactor, z), -1)
         samplers: *samplers
 
 stages:

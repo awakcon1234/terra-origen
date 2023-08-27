@@ -1,13 +1,32 @@
 biomeSpread:
+  # Basic size of biomes (distance between 2 biome centers)
+  # Increase to make biomes bigger
   cellDistance: 370
+
+  # how far biome centers can vary away from their centers
+  # Increase to make biome sizes vary more (scale 0-1)
+
   cellJitter: 0.8
+
+  # Frequency of rivers. Increase to make rivers closer together and smaller, decrease for bigger, more spaced out rivers
   riverScale: 0.0013
+
+  # applies to biomes with borders, controls the ratio of inner/outer biomes
   borderBiomes:
     edgeThreshold: 0.8
 
+  # sink holes have a chance to generate in the world. They go down to -50 and generate a smaller biome there. Placed anywhere over other biomes
+  sinkHoles:
+    stretchFactor: 2.5  # Length-width ratio of the sinkholes. Increase for more stretched/longer sinkholes
+    angle: 0.435        # Angle in which they are spawned. In radians (0.425 = 25 Degrees)
+    size: 0.83          # Sizing of the invidial sinkholes. Inversed, increase to make them smaller. Scale 0-1
+    borderSize: 0.013   # Size of the border biome around the sinkhole
+    frequency: 0.0025   # frequency of sinkhole placement. Increase for more smaller sinkholes, decrease for fewer, but larger ones
+
+# the below values are only partially used and will be removed/moved at some point in the future
 
 global-scale: 1
-# Modifies the scale of all biome distribution, you can use this parameter 
+# Modifies the scale of all biome distribution, you can use this parameter
 # to if you want just about every biome to be larger or smaller.
 # By doubling the scale, you double the length & width of everything,
 # e.g. if you have a biome that is 300 blocks wide with a scale of 1, and
