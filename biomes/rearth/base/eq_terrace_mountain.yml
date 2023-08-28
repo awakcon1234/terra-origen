@@ -44,7 +44,7 @@ terrain:
       surfaceBaseMountains:
         dimensions: 2
         type: OPEN_SIMPLEX_2S
-        frequency: 0.0048
+        frequency: 0.004
       terraceSizeVariation:
         dimensions: 2
         type: OPEN_SIMPLEX_2S
