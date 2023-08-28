@@ -90,6 +90,11 @@ These mountains are covered by giant redwood trees. Similar to the black forests
 > ![2023-07-28_11 47 03](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/9d9705c2-fbcb-4665-9a89-4e44121b724d)
 At a first glance, the secluded valley is just a large and flat sunflower field. However, there are also huge valleys with a small entrance hidden spread throughout this biome. The valleys containt cherry trees and have a small chance to spawn a giant cherry tree in the middle.
 
+**Sakura Streams**
+
+> ![2023-08-28_23 44 56](https://github.com/Rearth/Origen/assets/10100603/609e7642-1bc4-4663-a531-3beb77206229)
+Gaint mountain, with a lake at the top and multiple rivers flowing down the mountainside. Covered with sakura trees and large leaf vines. Has a small chance to small giant sakura trees.
+
 **Verdant Valley**
 
 > ![2023-08-27_15 07 02](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/4433a0f4-e33b-4568-a416-b704ebd32ba0)
