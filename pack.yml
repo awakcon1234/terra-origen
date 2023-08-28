@@ -42,8 +42,8 @@ addons:
 # Default biome distribution
 # biomes: $biome-distribution/presets/default.yml:biomes
 
-# biomes: $biome-distribution/presets/rearth.yml:biomes
-biomes: $biome-distribution/presets/single.yml:biomes
+biomes: $biome-distribution/presets/rearth.yml:biomes
+# biomes: $biome-distribution/presets/single.yml:biomes
 
 # ---
 # Population stages

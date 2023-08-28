@@ -29,6 +29,7 @@ stages:
       TALL_TIMBERLAND: 2
       _pillow_plains: 2
       _secluded_valleys: 1
+      SAKURA_STREAMS: 1
       # LAND_MEDIUM_A: 1
       # LAND_MEDIUM_B: 1
   - type: REPLACE
