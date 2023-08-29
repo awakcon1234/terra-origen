@@ -45,6 +45,11 @@ An environment made of very high terracotta plateous, with large canyons and riv
 > ![2023-08-09_23 40 35](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c8fb50da-f7cd-4222-8200-b8dd74e2b6f6)
 The dinosaur biome. Mostly flat with some segmented elevations. Can spawn dinosaur fossils, which usually have multiple "rib" segments and a chance to include a giant head on the front.
 
+**Bamboo Basins**
+
+![2023-08-29_17 29 53](https://github.com/Rearth/Origen/assets/10100603/88610a27-3f33-4464-bc33-3a337c14f10b)
+This biome usually has features a central mountain without any steep cliffs. Multiple rivers flow out from the lakes at the mountain top, and the surfance is covered with eucalyptus trees and bamboo. The ground has both grass and podzol.
+
 **Frosty Fingers**
 
 > ![2023-08-27_16 40 21](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/44ad0eb0-71d7-4aa4-a6b4-596d9fd4e32c)
