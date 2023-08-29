@@ -62,7 +62,7 @@ terrain:
         variables: *variables
         expression: |
           clamp(abs(abs(riverBaseAngle(x,z) * 3) +    // basic line from center
-            riverAngleVariation(cellMountains(x,z) * 200, 0) * 0.27   // vary angle slightly going outwards
+            riverAngleVariation(cellMountains(x,z) * 300, 0) * 0.27   // vary angle slightly going outwards
             - rivers(x,z)) % (6.28 / 5) * lerp(cellMountains(x,z), -0.98, -0.4, -0.2, 3.5) // ensure river has proper width
             - 0.175 + riverAngleVariation(cellMountains(x,z) * 400, x / 300 + z / 200) * 0.02, -0.13, 0)   // vary the river width going outwad, then clamp it to a min and max height
         samplers:
