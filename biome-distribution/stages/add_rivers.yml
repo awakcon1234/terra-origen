@@ -45,6 +45,12 @@ stages:
       VERTICAL_JUNGLE_RIVER: 1
     sampler: *riverSampler
   - type: REPLACE
+    from: USE_BAD_BALCOONIES_RIVER
+    to:
+      SELF: 1
+      BAD_BALCOONIES_RIVER: 1
+    sampler: *riverSampler
+  - type: REPLACE
     from: USE_RIVER
     to:
       SELF: 1

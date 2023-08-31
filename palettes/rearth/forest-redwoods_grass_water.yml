@@ -24,7 +24,7 @@ sampler:
   expression: |
     if (clearingStrength(x,0,z) > 0.7 + 0.18, 
       if (lakeDepth(x,0,z) < -0.73, 
-        if (lakeDepth(x,0,z) < -0.8, 1, 0),
+        if (lakeDepth(x,0,z) < -0.84, 1, 0),
       -1),
     -1)
   samplers:
