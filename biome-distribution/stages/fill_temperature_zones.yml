@@ -12,6 +12,7 @@ stages:
       SNOWY_MEADOW: 1
       SNOWY_MOUNTAINS: 1
       MOUNTAIN_MIRRORS: 2
+      ALPINE_ASCENDANCY: 1
   - type: REPLACE
     from: medium
     sampler:
