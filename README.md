@@ -1,5 +1,7 @@
 ![Origen](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/0657306f-4f00-4003-b3da-33e32e99e855)
 
+> This pack is still in a testing phase, so bugs and issues are to be expected
+
 An overworld configuration pack for terra 6.4 and higher. It is based on the default terra overworld config pack v2.0, which you can find 
 [here](https://github.com/PolyhedralDev/TerraOverworldConfig/tree/2.0). A lot of content is used from the default pack, especially regarding the terrain features such as trees, flora and palettes.
 
@@ -64,6 +66,11 @@ The mountain mirrors consist of huge mountains, with multiple terrace layers and
 
 > ![2023-08-27_12 22 30](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/d126e85c-8670-47cb-a774-27d4aba5bf81)
 Jungle version of the mountain mirrors. Features huge mountains with terraces along it. Usually covered with large jungle trees and a few lush lakes at the bottom.
+
+**Badland Balconies**
+
+![2023-08-31_18 23 03](https://github.com/Rearth/Origen/assets/10100603/ecb12535-da74-4674-887a-71810e99e12d)
+Terracotta-covered mountains, with flat areas inbetween, and some terraces along the mountain ridges. Allows for a thin layer of oak trees in the mountains.
 
 **Lush Loops**
 
