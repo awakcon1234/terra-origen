@@ -1,4 +1,4 @@
-stages:stages:
+stages:
   - type: REPLACE
     from: ocean
     sampler:
