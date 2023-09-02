@@ -1,5 +1,7 @@
 ![Origen](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/0657306f-4f00-4003-b3da-33e32e99e855)
 
+> This pack is still in a testing phase, so bugs and issues are to be expected
+
 An overworld configuration pack for terra 6.4 and higher. It is based on the default terra overworld config pack v2.0, which you can find 
 [here](https://github.com/PolyhedralDev/TerraOverworldConfig/tree/2.0). A lot of content is used from the default pack, especially regarding the terrain features such as trees, flora and palettes.
 
