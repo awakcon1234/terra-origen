@@ -1,6 +1,41 @@
-stages:
+stages:stages:
   - type: REPLACE
     from: ocean
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: NoiseLookup
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      lookup:
+        type: EXPRESSION 
+        expression: temperature(x, z)
+    to:
+      ocean_cold: 1
+      ocean_medium: 1
+      ocean_warm: 1
+  - type: REPLACE
+    from: ocean_cold
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to:
+      OCEAN: 1
+      ICEBERG_OCEAN: 1
+      FROZEN_OCEAN: 1
+  - type: REPLACE
+    from: ocean_medium
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to:
+      OCEAN: 1
+      DEEP_OCEAN: 1
+  - type: REPLACE
+    from: ocean_warm
     sampler:
       type: CELLULAR
       jitter: ${customization.yml:biomeSpread.cellJitter}
@@ -12,5 +47,3 @@ stages:
       TROPICAL_OCEAN: 1
       TROPICAL_DEEP_OCEAN: 1
       CORAL_OCEAN: 1
-      ICEBERG_OCEAN: 1
-      FROZEN_OCEAN: 1
