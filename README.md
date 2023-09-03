@@ -49,7 +49,7 @@ The dinosaur biome. Mostly flat with some segmented elevations. Can spawn dinosa
 
 **Bamboo Basins**
 
-![2023-08-29_17 29 53](https://github.com/Rearth/Origen/assets/10100603/88610a27-3f33-4464-bc33-3a337c14f10b)
+> ![2023-08-29_17 29 53](https://github.com/Rearth/Origen/assets/10100603/88610a27-3f33-4464-bc33-3a337c14f10b)
 This biome usually has features a central mountain without any steep cliffs. Multiple rivers flow out from the lakes at the mountain top, and the surfance is covered with eucalyptus trees and bamboo. The ground has both grass and podzol.
 
 **Frosty Fingers**
@@ -69,7 +69,7 @@ Jungle version of the mountain mirrors. Features huge mountains with terraces al
 
 **Badland Balconies**
 
-![2023-08-31_18 23 03](https://github.com/Rearth/Origen/assets/10100603/ecb12535-da74-4674-887a-71810e99e12d)
+> ![2023-08-31_18 23 03](https://github.com/Rearth/Origen/assets/10100603/ecb12535-da74-4674-887a-71810e99e12d)
 Terracotta-covered mountains, with flat areas inbetween, and some terraces along the mountain ridges. Allows for a thin layer of oak trees in the mountains.
 
 **Lush Loops**
