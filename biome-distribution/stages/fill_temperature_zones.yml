@@ -46,10 +46,10 @@ stages:
       MESA_MONUMENTS: 3
       LUSH_LOOPS: 2
       CARVING_CREAKS: 4
-      DESERT: 4
       SALT_FLATS: 1
       DESERT_SPIKES_GOLD: 2
       OVERGROWN_CLIFFS: 3
       CANOPY_CASCADES: 3
+      _desert: 4
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1

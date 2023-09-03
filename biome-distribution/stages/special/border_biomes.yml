@@ -33,3 +33,18 @@ stages:
     to: # 0 = outer, 1 = inner
       SECLUDED_VALLEY_OUTER: 1
       SECLUDED_VALLEY: 1
+  - type: REPLACE
+    from: _desert
+    sampler:
+      dimensions: 2
+      type: EXPRESSION
+      expression: if(cells(x,z) < -0.991, 1, -1)
+      samplers:
+        cells:
+          dimensions: 2
+          type: CELLULAR
+          jitter: ${customization.yml:biomeSpread.cellJitter}
+          frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+    to: # 0 = outer, 1 = inner
+      DESERT: 1
+      OASIS: 1
