@@ -32,7 +32,8 @@ stages:
       _secluded_valleys: 1
       SAKURA_STREAMS: 1
       BAMBOO_BASIN: 2
-      BADLANDS_BALCONIES: 1
+      BADLANDS_BALCONIES: 2
+      _plateao: 1
       # LAND_MEDIUM_A: 1
       # LAND_MEDIUM_B: 1
   - type: REPLACE

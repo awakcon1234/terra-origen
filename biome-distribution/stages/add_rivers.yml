@@ -57,6 +57,18 @@ stages:
       ALPINE_ASCENDANCY_RIVER: 1
     sampler: *riverSampler
   - type: REPLACE
+    from: USE_PLATEAU_MID_RIVER
+    to:
+      SELF: 1
+      PLATEAO_RIVER_MIDDLE: 1
+    sampler: *riverSampler
+  - type: REPLACE
+    from: USE_PLATEAU_INNER_RIVER
+    to:
+      SELF: 1
+      PLATEAO_RIVER_INNER: 1
+    sampler: *riverSampler
+  - type: REPLACE
     from: USE_RIVER
     to:
       SELF: 1

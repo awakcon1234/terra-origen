@@ -1,15 +1,21 @@
-id: FOSSILIZED_FENLANDS
+id: FOLIAGE_FORTRESS_OUTER
 type: BIOME
-vanilla: minecraft:plains
+vanilla: minecraft:savanna
 extends: [ CARVING_LAND, BASE ]
 
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:SAVANNA
+
+colors:
+  grass: 0x82BC6D
+  foliage: 0x65A949
+  water: 0xE4ECF
+  water-fog: 0xC0D8FF
 
 tags:
   - USE_RIVER
 
 vars: &variables
-  base: 71
+  base: 69
   height: 11
   stepHeight: 4
 
@@ -21,10 +27,6 @@ terrain:
     expression: |
       -y + base + height * surfaceOffset(x,z)
       + clamp(plateous(x,z) * 90, -stepHeight, stepHeight)
-    functions:
-      clamp:
-        arguments: [x, a, b] # clamps x between a (low) and b (high)
-        expression: min(max(x, a), b)
     samplers:
       plateous:
         dimensions: 2
@@ -53,17 +55,14 @@ slant:
       - << meta.yml:palette-bottom
 
 features:
-  landforms:
-    - FOSSIL_RIBS
   flora:
     - GRASS
-    - LARGE_CEILING_VINES
+    - TALL_GRASS
     - POPPY_PATCH
+    - DANDELION_PATCH
+    - ROSE_BUSH_PATCH
     - PEONY_PATCH
     - LILAC_PATCH
     - LILY_OF_THE_VALLEY_PATCH
-    - SMALL_DRIPLEAF
-    - BAMBOO_PATCHES
   trees:
-    - MESQUITE_TREES
-    - SWAMP_TREES
+    - ACACIA_TREES

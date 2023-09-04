@@ -40,12 +40,6 @@ biomes:
         - type: FRACTAL_EXPAND
           sampler:
             type: WHITE_NOISE
-        - type: FRACTAL_EXPAND
-          sampler:
-            type: WHITE_NOISE
-        - type: SMOOTH
-          sampler:
-            type: WHITE_NOISE
         - type: SMOOTH
           sampler:
             type: WHITE_NOISE
