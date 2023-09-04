@@ -10,9 +10,9 @@ Origen focuses on adding a new and more creative / diverse terrain generation, w
 You can find Terra - the main project this config pack is designed for
 [here](https://github.com/PolyhedralDev/Terra).
 
-Huge thanks to everyone on the terra discord that has helped with my countless questions and with giving feedback. Most notably to Astrash and Aureus, without them this pack wouldn't have made it anywhere.
+Huge thanks to everyone on the terra discord that has helped with my countless questions and with giving feedback. Most notably to Astrash and Aureus, without them this pack wouldn't have made it anywhere.  Some of the screenshots are taken with the [barebones texture pack](https://www.curseforge.com/minecraft/texture-packs/bb).
 
-Most top level settings, such as biome and river sizes, can be found in the file [costumization.yml](customization.yml)
+Most top level settings, such as biome and river sizes, can be found in the file [costumization.yml](customization.yml).
 
 ---
 
@@ -31,6 +31,11 @@ Rivers are added throughout all biomes tagged with "USE_RIVER". These rivers are
 Here is a full list of all biomes used in Origen. Note that some biomes are already included in the default terra overworld config pack, and will be marked as such.
 
 ### Land
+
+**Foliage Fortress**
+
+> ![2023-09-04_21 59 24_cropped](https://github.com/Rearth/Origen/assets/10100603/e7210ff4-d62d-42c8-93c2-39925123cdc5)
+Giant plateau with sharp overhangs surrounding it. These overhangs are supported by large stone pillars. A savanna-like environment is found at and around the bottom of the plateau, while the top is covered with all sorts of trees.
 
 **Black Forest**
 
