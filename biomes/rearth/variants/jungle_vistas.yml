@@ -51,5 +51,9 @@ features:
     - MELON_PATCHES
     - SMALL_DRIPLEAF
     - BIG_DRIPLEAF
+    - CORAL_PLANTS
+    - CORAL_FANS
   trees:
     - JUNGLE_TREES
+    - DENDRIFORM_REEF
+    - BALL_REEF

@@ -51,6 +51,7 @@ stages:
       DESERT_SPIKES_GOLD: 2
       OVERGROWN_CLIFFS: 3
       CANOPY_CASCADES: 3
+      WATERY_WILDS: 2
       _desert: 4
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1
