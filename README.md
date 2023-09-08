@@ -151,7 +151,15 @@ Towering cliffs biome, only found at the bigger coasts. The biome has a mostly f
 
 ### Ocean
 
-** TODO **
+**Stonegate Seas**
+
+> ![2023-09-08_17 59 02](https://github.com/Rearth/Origen/assets/10100603/5e903435-c998-4eea-a078-b0dfc81e4c3c)
+Medium-depth ocean, with giant stone arches under and on the surface. The arches are made mossy and partially green, with lush green foliage covering it.
+
+**Arctic Arches**
+
+> ![2023-09-08_18 40 55](https://github.com/Rearth/Origen/assets/10100603/31ecbfe8-2785-4ea8-a48c-a830223bf63a)
+Frozen version of the Stonegate Seas, with frozen water segments, and large ice arches reaching through the sky. Icicles are found on the ceiling of the arches.
 
 ### Special
 
