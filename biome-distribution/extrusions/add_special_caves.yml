@@ -4,23 +4,27 @@ extrusions:
     sampler: &caveSampler
       type: EXPRESSION
       expression: |
-        if (caves(x,y*2,z) < -0.79, 
+        if (caves(x,y*2,z) < -0.79 && caveElevation(x, y*2, z) > 0.3, 
           caveVariation(x,y*2,z),
           -1)
       samplers:
-        caves:
+        caves: &caveSettings
           dimensions: 3
           type: CELLULAR
           frequency: 0.005
           jitter: 0.05
           salt: 24
         caveVariation:
-          dimensions: 3
-          type: CELLULAR
-          frequency: 0.005
-          jitter: 0.05
-          salt: 24
+          <<: *caveSettings
           return: CellValue
+        caveElevation:
+          <<: *caveSettings
+          return: NoiseLookup
+          lookup:
+            dimensions: 3
+            type: EXPRESSION
+            expression: |
+              continents(x, z)
     to:
       - SELF: 5
       - INFERNO_ISLES: 1
