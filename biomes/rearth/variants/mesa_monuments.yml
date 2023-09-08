@@ -19,26 +19,23 @@ terrain:
     variables: *variables
     expression: |
       clamp(-y + base + noiseBase(x,z) * height, -2, 3)
-      + clamp(pillars(x,y,z) * 24, -2, 3) * if(-abs(rivers(x, z)) > -0.5 || biomeInfluence(x,z) > -0.88, 0, 1)
+      + clamp(pillars(x,y,z) * 24, -2, 3)
     functions:
       clamp:
         arguments: [x, a, b] # clamps x between a (low) and b (high)
         expression: min(max(x, a), b)
     samplers:
-      biomeInfluence:
-        dimensions: 2
-        type: CELLULAR
-        jitter: ${customization.yml:biomeSpread.cellJitter}
-        frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
       pillars:
         dimensions: 3
         type: EXPRESSION
         variables: *variables
         expression: |
-          -basepillars(x,z) - 0.72    // basic pillars
-          + basepillarsCenter(x,z) * 0.12 // vary whole pillar size
-          + pillarWidthRand(y, x / 10) * 0.09 // vary size along height
-          + (min(0, base + pillarHeight * (basepillarsCenter(x,z) * 0.4 + 1) - y) / 12)^3  // top cap
+          basePillarsExistance(x,z) * (
+            -basepillars(x,z) - 0.72    // basic pillars
+            + basepillarsCenter(x,z) * 0.12 // vary whole pillar size
+            + pillarWidthRand(y, x / 10) * 0.09 // vary size along height
+            + (min(0, base + pillarHeight * (basepillarsCenter(x,z) * 0.4 + 1) - y) / 12)^3  // top cap
+          )
         samplers:
           basepillars: &pillarConf
             dimensions: 2
@@ -49,6 +46,25 @@ terrain:
           basepillarsCenter: 
             <<: *pillarConf
             return: CellValue
+          basePillarsExistance: 
+            <<: *pillarConf
+            return: NoiseLookup
+            lookup:
+              dimensions: 2
+              type: EXPRESSION
+              variables: *variables
+              expression: |
+                if (-abs(rivers(x, z)) > -0.5 || biomeInfluence(x,z) > -0.86, 0, 1)
+              samplers:
+                biomeInfluence:
+                  dimensions: 2
+                  type: CELLULAR
+                  jitter: ${customization.yml:biomeSpread.cellJitter}
+                  frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+                rivers:
+                  dimensions: 2
+                  type: OPEN_SIMPLEX_2
+                  frequency: ${customization.yml:biomeSpread.riverScale}
           pillarWidthRand:
             dimensions: 2
             type: FBM
@@ -63,16 +79,6 @@ terrain:
         dimensions: 2
         type: OPEN_SIMPLEX_2S
         frequency: 0.011
-      rivers:
-        dimensions: 2
-        type: CELLULAR
-        frequency: 0.022
-        jitter: 1
-        return: NoiseLookup
-        lookup:
-          dimensions: 2
-          type: OPEN_SIMPLEX_2
-          frequency: ${customization.yml:biomeSpread.riverScale}
 
 palette:
   - BADLANDS_PILLARS_TERRACOTTA: 319
