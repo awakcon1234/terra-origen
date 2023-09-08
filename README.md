@@ -138,6 +138,11 @@ More biomes will follow soon.
 > ![2023-08-27_15 00 32](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c70a92a2-e8eb-4182-83e4-0ff51526e3ba)
 Giant cave biome that usually is found around -20 to +40. Contains a big lava lake with interconnected platforms hanging on chains over it. The cave roof is covered with glowing plants.
 
+**Terracotta Tombs**
+
+> ![2023-09-08_21 29 17](https://github.com/Rearth/Origen/assets/10100603/373ab5da-44a1-45b5-8272-c4138e050bb3)
+Underground cavern biome, with a similar shape to the inferno isles. However, this biome is made from terracotta walls, with huge pillars of terracotta in the center.
+
 ** TODO **
 
 ### Coast
