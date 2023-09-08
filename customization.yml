@@ -6,7 +6,7 @@ biomeSpread:
   # how far biome centers can vary away from their centers
   # Increase to make biome sizes vary more (scale 0-1)
 
-  cellJitter: 0.8
+  cellJitter: 0.9
 
   # Frequency of rivers. Increase to make rivers closer together and smaller, decrease for bigger, more spaced out rivers
   riverScale: 0.0013

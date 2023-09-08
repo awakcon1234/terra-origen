@@ -21,9 +21,10 @@ stages:
       return: CellValue
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
-      OCEAN: 1
-      ICEBERG_OCEAN: 1
-      FROZEN_OCEAN: 1
+      OCEAN: 2
+      ICEBERG_OCEAN: 2
+      FROZEN_OCEAN: 3
+      ARCTIC_ARCHES: 1
   - type: REPLACE
     from: ocean_medium
     sampler:
@@ -32,8 +33,9 @@ stages:
       return: CellValue
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
-      OCEAN: 1
-      DEEP_OCEAN: 1
+      OCEAN: 3
+      DEEP_OCEAN: 2
+      STONEGATE_SEAS: 1
   - type: REPLACE
     from: ocean_warm
     sampler:
@@ -42,8 +44,9 @@ stages:
       return: CellValue
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
-      OCEAN: 1
-      DEEP_OCEAN: 1
-      TROPICAL_OCEAN: 1
-      TROPICAL_DEEP_OCEAN: 1
-      CORAL_OCEAN: 1
+      OCEAN: 2
+      DEEP_OCEAN: 2
+      TROPICAL_OCEAN: 3
+      TROPICAL_DEEP_OCEAN: 2
+      CORAL_OCEAN: 4
+      STONEGATE_SEAS: 1

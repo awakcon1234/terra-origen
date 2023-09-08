@@ -1,3 +1,3 @@
 biomes:
   type: SINGLE
-  biome: WATERY_WILDS # The singular biome that will be used.
+  biome: ARCTIC_ARCHES # The singular biome that will be used.
