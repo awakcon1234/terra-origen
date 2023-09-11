@@ -13,6 +13,7 @@ stages:
       SNOWY_MOUNTAINS: 1
       MOUNTAIN_MIRRORS: 2
       ALPINE_ASCENDANCY: 1
+      TUNDRA_TRACKS: 2
   - type: REPLACE
     from: medium
     sampler:
@@ -46,12 +47,12 @@ stages:
     to:
       MESA_MONUMENTS: 3
       LUSH_LOOPS: 2
-      CARVING_CREAKS: 4
+      CARVING_CREAKS: 3
       SALT_FLATS: 1
-      DESERT_SPIKES_GOLD: 2
-      OVERGROWN_CLIFFS: 3
-      CANOPY_CASCADES: 3
+      DESERT_SPIKES_GOLD: 1
+      OVERGROWN_CLIFFS: 2
+      CANOPY_CASCADES: 2
       WATERY_WILDS: 2
-      _desert: 4
+      _desert: 2
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1

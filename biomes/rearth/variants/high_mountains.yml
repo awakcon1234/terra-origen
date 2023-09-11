@@ -1,6 +1,6 @@
 id: ALPINE_ASCENDANCY
 type: BIOME
-vanilla: minecraft:plains
+vanilla: minecraft:jagged_peaks
 color: $biomes/colors.yml:PLAINS
 extends: [ CARVING_LAND, BASE ]
 
