@@ -107,6 +107,16 @@ Savanna-like biome, but partially covered in water, wild small paths leading thr
 > ![2023-08-23_22 31 10](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/685e7708-0a6a-48ff-ac26-cdfbb3e49d0c)
 These mountains are covered by giant redwood trees. Similar to the black forests, they also feature flat clearing and lakes in between their forest-covered mountains.
 
+**Tundra Tracks**
+
+> ![2023-09-11_22 30 56](https://github.com/Rearth/Origen/assets/10100603/bda44763-6728-4b6a-803a-17cb04ca5194)
+Cold lowlands biome, covered in lakes and small hills. Frozen paths are woven through the lakes. Snow-covered trees are scattered across the landscape.
+
+**Oasis**
+
+> ![2023-09-11_22 38 52](https://github.com/Rearth/Origen/assets/10100603/55b26ccd-9419-46a2-a126-5688afa997d8)
+Micro-biome, usually found in the middle of desert biomes. Identified by a small lake in the sand dunes, with palm trees and grass surrounding it.
+
 **Secluded Valley**
 
 > ![2023-07-28_11 47 03](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/9d9705c2-fbcb-4665-9a89-4e44121b724d)
