@@ -19,6 +19,8 @@ palette:
   - << meta.yml:palette-bottom
 
 features:
+  preprocessors:
+    - CONTAIN_FLOATING_WATER_HIGH
   landforms:
     - BOULDERS
     - SMALL_BOULDER_PATCHES

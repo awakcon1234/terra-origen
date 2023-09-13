@@ -17,10 +17,10 @@ sinkholeSampler: &sinkholeSampler
     warpedCells:
       dimensions: 2
       type: DOMAIN_WARP
-      amplitude: 12
+      amplitude: 20
       warp:
         type: OPEN_SIMPLEX_2
-        frequency: 0.015
+        frequency: 0.01
       sampler:
         dimensions: 2
         type: EXPRESSION
@@ -54,10 +54,10 @@ sinkholeSamplerOuter: &sinkholeSamplerOuter
     warpedCells:
       dimensions: 2
       type: DOMAIN_WARP
-      amplitude: 12
+      amplitude: 20
       warp:
         type: OPEN_SIMPLEX_2
-        frequency: 0.015
+        frequency: 0.01
       sampler:
         dimensions: 2
         type: EXPRESSION

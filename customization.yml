@@ -20,7 +20,7 @@ biomeSpread:
     stretchFactor: 2.5  # Length-width ratio of the sinkholes. Increase for more stretched/longer sinkholes
     angle: 0.435        # Angle in which they are spawned. In radians (0.425 = 25 Degrees)
     size: 0.83          # Sizing of the invidial sinkholes. Inversed, increase to make them smaller. Scale 0-1
-    borderSize: 0.013   # Size of the border biome around the sinkhole
+    borderSize: 0.02   # Size of the border biome around the sinkhole
     frequency: 0.0025   # frequency of sinkhole placement. Increase for more smaller sinkholes, decrease for fewer, but larger ones
 
 # the below values are only partially used and will be removed/moved at some point in the future
