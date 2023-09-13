@@ -1,6 +1,37 @@
 stages:
-  - type: REPLACE # add small coast
+# split coasts into cold, medium, warm
+  - type: REPLACE
     from: coast_small
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: NoiseLookup
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      lookup:
+        type: EXPRESSION 
+        expression: temperature(x, z)
+    to:
+      coast_small_cold: 1
+      coast_small_medium: 1
+      coast_small_warm: 1
+  - type: REPLACE
+    from: coast_wide
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: NoiseLookup
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      lookup:
+        type: EXPRESSION 
+        expression: temperature(x, z)
+    to:
+      coast_wide_cold: 1
+      coast_wide_medium: 1
+      coast_wide_warm: 1
+
+# populate small temperature zones
+  - type: REPLACE # add small coast
+    from: coast_small_cold
     sampler:
       type: CELLULAR
       jitter: ${customization.yml:biomeSpread.cellJitter}
@@ -8,13 +39,61 @@ stages:
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
       salt: 8726345
     to:
-      # COAST_MEDIUM_A: 1
       SHALE_BEACH: 1
-      PALM_BEACH: 2
       BEACH: 3
-      MANGROVE_SWAMP: 1
-  - type: REPLACE # add big coast
-    from: coast_wide
+  - type: REPLACE # add small coast
+    from: coast_small_medium
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      salt: 8726345
+    to:
+      SHALE_BEACH: 2
+      PALM_BEACH: 1
+      BEACH: 2
+      MANGROVE_SWAMP: 2
+  - type: REPLACE # add small coast
+    from: coast_small_warm
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      salt: 8726345
+    to:
+      SHALE_BEACH: 1
+      PALM_BEACH: 4
+      BEACH: 3
+
+      
+# populate big temperature zones
+  - type: REPLACE
+    from: coast_wide_cold
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      salt: 8726345
+    to:
+      BEACH: 2
+      MARINE_MONOLITHS: 1
+  - type: REPLACE
+    from: coast_wide_medium
+    sampler:
+      type: CELLULAR
+      jitter: ${customization.yml:biomeSpread.cellJitter}
+      return: CellValue
+      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
+      salt: 8726345
+    to:
+      TEMPERATE_SEA_ARCHES: 2
+      PALM_BEACH: 2
+      MARINE_MONOLITHS: 1
+  - type: REPLACE
+    from: coast_wide_warm
     sampler:
       type: CELLULAR
       jitter: ${customization.yml:biomeSpread.cellJitter}
