@@ -69,6 +69,18 @@ stages:
       PLATEAO_RIVER_INNER: 1
     sampler: *riverSampler
   - type: REPLACE
+    from: USE_SCARLET_RIVER
+    to:
+      SELF: 1
+      SCARLET_SANCTUARY_RIVER: 1
+    sampler: *riverSampler
+  - type: REPLACE
+    from: USE_COLD_FUNGI_RIVER
+    to:
+      SELF: 1
+      FROZEN_FUNGI_RIVER: 1
+    sampler: *riverSampler
+  - type: REPLACE
     from: USE_RIVER
     to:
       SELF: 1

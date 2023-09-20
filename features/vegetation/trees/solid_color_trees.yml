@@ -1,11 +1,11 @@
-id: LARGE_MUSHROOMS
+id: UNCOLORED_TREES
 type: FEATURE
 
 distributor:
   type: PADDED_GRID
-  width: 15
-  padding: 7
-  salt: 2931
+  width: 10
+  padding: 3
+  salt: 9591
 
 locator:
   type: AND
@@ -20,9 +20,20 @@ locator:
         type: MATCH_SET
         blocks: $features/vegetation/meta.yml:plantable-blocks
         offset: -1
+    - type: PATTERN
+      range: *range
+      pattern:
+        type: MATCH_SET
+        blocks:
+          - minecraft:snow
+          - minecraft:air
+        offset: 0
 
 structures:
   distribution:
-    type: CONSTANT
-  structures: large_mixed_mushroom_procedural
-  
+    type: CELLULAR
+    return: CellValue
+    frequency: 0.03
+  structures:
+    - spruce_tree_procedural: 1
+    - birch_tree_procedural: 1
