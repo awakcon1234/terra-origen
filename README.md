@@ -97,6 +97,11 @@ Imagine a unique and exotic rendition of the familiar vanilla swamp. This varian
 > ![2023-08-27_15 04 35](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c3ead62b-bbfa-495e-b9d4-0fe8805ecf64)
 Split into a high border segment and a low inner segment, the pillow plains is marked by its small pillars through a green valley. Due to the low height of the inner segment, there are no rivers in this biome, though this will be changed in the future by adding a special low river variant.
 
+**Scarlet Sanctuary**
+
+![2023-09-20_21 05 43](https://github.com/Rearth/Origen/assets/10100603/37302429-6dfb-47ac-bf1b-e600cbd5b3b3)
+Sloped biome, with giant cliffs on the sides. Covered in abundant vegetation, some if it with red leaves. The trees in this terrain can grow much larger than usual, and the floor is filled with grass and more vegetation.
+
 **Watery Wilds**
 
 > ![2023-09-08_14 50 16](https://github.com/Rearth/Origen/assets/10100603/339771fb-c33d-4449-adb7-aab9946d568a)
@@ -111,6 +116,11 @@ These mountains are covered by giant redwood trees. Similar to the black forests
 
 > ![2023-09-11_22 30 56](https://github.com/Rearth/Origen/assets/10100603/bda44763-6728-4b6a-803a-17cb04ca5194)
 Cold lowlands biome, covered in lakes and small hills. Frozen paths are woven through the lakes. Snow-covered trees are scattered across the landscape.
+
+**Frozen Fungi**
+
+![2023-09-20_22 23 46](https://github.com/Rearth/Origen/assets/10100603/7df4325b-7fe6-4748-baa5-49e022f70abc)
+Frozen mushroom biome. The terrain itself is slightly tilted, with huge cliffs on one side. There are small and large mushrooms growing, along with some trees. The ground is covered in snow, mycelium and podzol.
 
 **Oasis**
 
