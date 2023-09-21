@@ -87,6 +87,11 @@ A lush jungle environment, with massive eye-catching stone arches looping throug
 > ![2023-07-26_23 29 34](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/cfb8098b-4cab-4e1d-b442-b0d2372fa024)
 Covered by giant terracotta pillars, the mesa monuments biome is a warm badlands / desert mix. The main feature are the big terracotta pillars in it, which can reach up to 100 blocks into the sky.
 
+**Rocky refuge**
+
+> ![2023-09-21_23 41 42](https://github.com/Rearth/Origen/assets/10100603/b31639fa-60fe-4c40-b0c4-a66617d2a9ed)
+Forested badlands biome, with large, overhanging terracotta boulders. The boulders are covered in leaf vines, and there are sparse tree patches on the floor.
+
 **Murky Marshlands**
 
 > ![2023-08-27_14 58 22](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c3b66b84-9597-46b0-99f9-fa0d2b7db7d0)
@@ -99,7 +104,7 @@ Split into a high border segment and a low inner segment, the pillow plains is m
 
 **Scarlet Sanctuary**
 
-![2023-09-20_21 05 43](https://github.com/Rearth/Origen/assets/10100603/37302429-6dfb-47ac-bf1b-e600cbd5b3b3)
+> ![2023-09-20_21 05 43](https://github.com/Rearth/Origen/assets/10100603/37302429-6dfb-47ac-bf1b-e600cbd5b3b3)
 Sloped biome, with giant cliffs on the sides. Covered in abundant vegetation, some if it with red leaves. The trees in this terrain can grow much larger than usual, and the floor is filled with grass and more vegetation.
 
 **Watery Wilds**
@@ -119,7 +124,7 @@ Cold lowlands biome, covered in lakes and small hills. Frozen paths are woven th
 
 **Frozen Fungi**
 
-![2023-09-20_22 23 46](https://github.com/Rearth/Origen/assets/10100603/7df4325b-7fe6-4748-baa5-49e022f70abc)
+> ![2023-09-20_22 23 46](https://github.com/Rearth/Origen/assets/10100603/7df4325b-7fe6-4748-baa5-49e022f70abc)
 Frozen mushroom biome. The terrain itself is slightly tilted, with huge cliffs on one side. There are small and large mushrooms growing, along with some trees. The ground is covered in snow, mycelium and podzol.
 
 **Oasis**
