@@ -14,7 +14,7 @@ terrain:
     variables: *variables
     expression: |
       cliffify(-y + base + height * surfaceOffset(x,z)
-        + (biomeTilt(x - 2, z - 2) + 0.5) * 55, -1)
+        + (biomeTilt(x - 3, z - 3) + 0.5) * 55, -1)
       + (wallAddition(x,y,z) + 1) * 2
     functions:
       cliffify:
@@ -38,7 +38,7 @@ terrain:
         sampler:
           dimensions: 2
           type: CELLULAR
-          return: OffsetNoiseLookup
+          return: LocalNoiseLookup
           jitter: ${customization.yml:biomeSpread.cellJitter}
           frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
           lookup:
