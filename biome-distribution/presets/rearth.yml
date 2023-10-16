@@ -50,6 +50,6 @@ biomes:
           sampler:
             type: WHITE_NOISE
 
-        - << biome-distribution/stages/special/add_sinkholes.yml:stages
+        # - << biome-distribution/stages/special/add_sinkholes.yml:stages
 
             
