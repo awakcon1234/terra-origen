@@ -140,7 +140,12 @@ At a first glance, the secluded valley is just a large and flat sunflower field.
 **Sakura Streams**
 
 > ![2023-08-28_23 44 56](https://github.com/Rearth/Origen/assets/10100603/609e7642-1bc4-4663-a531-3beb77206229)
-Gaint mountain, with a lake at the top and multiple rivers flowing down the mountainside. Covered with sakura trees and large leaf vines. Has a small chance to small giant sakura trees.
+Giant mountain, with a lake at the top and multiple rivers flowing down the mountainside. Covered with sakura trees and large leaf vines. Has a small chance to small giant sakura trees.
+
+**Bare Boulderfields**
+
+> ![2023-10-16_17 20 02](https://github.com/Rearth/Origen/assets/10100603/1660f170-b85f-4aac-8d0a-44ef8efaddab)
+Barren, rocky mountain, made out of stone plaes. Small trenches are running through the tilted stone plates.
 
 **Verdant Valley**
 
