@@ -6,7 +6,7 @@ color: $biomes/colors.yml:TEMPERATE_MOUNTAINS
 
 tags:
   - USE_RIVER
-  
+
 vars: &variables
   base: 85
   height: 14
@@ -45,27 +45,19 @@ terrain:
           type: OPEN_SIMPLEX_2S
           frequency: 0.003
       cellLean:
-        type: DOMAIN_WARP
-        amplitude: 0
-        dimensions: 2
-        warp:
+        <<: *pillars
+        return: LocalNoiseLookup
+        lookup:
+          type: EXPRESSION
+          variables: *variables
           dimensions: 2
-          type: OPEN_SIMPLEX_2
-          frequency: 0.06
-        sampler:
-          <<: *pillars
-          return: LocalNoiseLookup
-          lookup:
-            type: EXPRESSION
-            variables: *variables
-            dimensions: 2
-            expression: |
-              x * tiltStrength + z * tiltStrength * 0.7
-            samplers:
-              variation:
-                dimensions: 2
-                type: OPEN_SIMPLEX_2S
-                frequency: 0.06
+          expression: |
+            x * tiltStrength + z * tiltStrength * 0.7
+          samplers:
+            variation:
+              dimensions: 2
+              type: OPEN_SIMPLEX_2S
+              frequency: 0.06
 
 slant:
   - threshold: 0.4
