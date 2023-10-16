@@ -3,6 +3,9 @@ type: BIOME
 vanilla: minecraft:plains
 extends: [ CARVING_LAND, BASE ]
 
+tags:
+  - USE_RIVER
+  
 colors:
   sky: 0xE2D3B3
   fog: 0xE2D7C3
