@@ -1,0 +1,27 @@
+name: Releases
+
+on: 
+  push:
+    tags:
+    - '*'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v3
+    - uses: vimtor/action-zip@v1.1
+      with:
+        files: ./
+        dest: origen-${{github.ref_name}}.zip
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "origen-${{github.ref_name}}.zip"
+        artifactErrorsFailBuild: "true"
+        draft: "false"
+        generateReleaseNotes: "true"
+        makeLatest: "true"
+        bodyFile: ".github/workflows/body.md"
