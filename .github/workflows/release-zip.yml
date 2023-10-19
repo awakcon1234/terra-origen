@@ -24,4 +24,4 @@ jobs:
         draft: "true"
         generateReleaseNotes: "true"
         makeLatest: "true"
-        bodyFile: "body.md"
+        bodyFile: ".github/workflows/body.md"
