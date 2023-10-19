@@ -21,7 +21,7 @@ jobs:
       with:
         artifacts: "origen-${{github.ref_name}}.zip"
         artifactErrorsFailBuild: "true"
-        draft: "true"
+        draft: "false"
         generateReleaseNotes: "true"
         makeLatest: "true"
         bodyFile: ".github/workflows/body.md"
