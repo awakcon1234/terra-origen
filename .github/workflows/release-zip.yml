@@ -11,3 +11,8 @@ jobs:
         with:
           files: ./
           dest: result.zip
+      - name: Archive result artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: origen-build-${{ github.sha }}.zip
+          path: result.zip
