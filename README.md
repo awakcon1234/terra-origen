@@ -2,10 +2,10 @@
 
 > This pack is still in a testing phase, so bugs and issues are to be expected
 
-An overworld configuration pack for terra 6.4 and higher. **Currently based on a terra branch that is not merged yet, see this PR for more:** https://github.com/PolyhedralDev/Terra/pull/407. It is based on the default terra overworld config pack v2.0, which you can find 
+An overworld configuration pack for minecraft 1.20 and terra 6.4 and higher. It is based on the default terra overworld config pack v2.0, which you can find 
 [here](https://github.com/PolyhedralDev/TerraOverworldConfig/tree/2.0). A lot of content is used from the default pack, especially regarding the terrain features such as trees, flora and palettes.
 
-Origen focuses on adding a new and more creative / diverse terrain generation, without using any new blocks or items. This means that it is compatible with vanilla installations. 
+Origen focuses on adding a new and more creative / diverse terrain generation, without using any new blocks or items. This means that it is compatible with vanilla installations.
 
 You can find Terra - the main project this config pack is designed for
 [here](https://github.com/PolyhedralDev/Terra).
@@ -13,6 +13,12 @@ You can find Terra - the main project this config pack is designed for
 Huge thanks to everyone on the terra discord that has helped with my countless questions and with giving feedback. Most notably to Astrash and Aureus, without them this pack wouldn't have made it anywhere.  Some of the screenshots are taken with the [barebones texture pack](https://www.curseforge.com/minecraft/texture-packs/bb).
 
 Most top level settings, such as biome and river sizes, can be found in the file [costumization.yml](customization.yml).
+
+## Installation
+
+Origen is just a config pack for the terra mod. Make sure you have terra installed first. You can find it on [modrinth](https://modrinth.com/plugin/terra). 
+
+You can grab the latest release from the github [releases section](https://github.com/Rearth/Origen/releases/latest), from there just download the origen.zip file, and add it to your terra packs. For more information on installing terra config packs, see the [docs here](https://terra.polydev.org/config/pack-installation.html).
 
 ---
 
@@ -201,7 +207,9 @@ Frozen version of the Stonegate Seas, with frozen water segments, and large ice 
 **Sinkholes**
 
 > ![2023-08-27_14 51 16](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/27346dee-53c4-4ebd-a577-e12d8e915f43)
-Sinkhole can be found anywhere in the world, ignoring the usual biome cell spawns. However, they are quite rate. They reach down to Y -40 and have steep cliffs and are usually streched at an angle. There currently are 3 sinkhole variations:
+**Currently disabled**
+
+Sinkholes can be found anywhere in the world, ignoring the usual biome cell spawns. However, they are quite rate. They reach down to Y -40 and have steep cliffs and are usually streched at an angle. There currently are 3 sinkhole variations:
 
 **Jungle Sinkhole**
 
