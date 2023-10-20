@@ -4,7 +4,7 @@ extrusions:
     sampler: &caveSampler
       type: EXPRESSION
       expression: |
-        if (caves(x,y*2,z) < -0.79 && caveElevation(x, y*2, z) > 0.6, 
+        if (caves(x,y*2,z) < -0.79 && caveElevation(x, y*2, z) > 0.1, 
           caveVariation(x,y*2,z),
           -1)
       samplers:
@@ -29,6 +29,7 @@ extrusions:
       - SELF: 3
       - INFERNO_ISLES: 1
       - TERRACOTTA_TOMBS: 1
+      - VINE_VAULT: 1
     range:
       min: -30
       max: 45

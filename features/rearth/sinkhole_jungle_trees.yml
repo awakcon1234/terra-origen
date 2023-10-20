@@ -5,8 +5,8 @@ distributor:
   type: AND
   distributors:
     - type: PADDED_GRID
-      width: 6
-      padding: 2
+      width: 4
+      padding: 1
       salt: 4602
     - type: SAMPLER
       sampler:
@@ -22,7 +22,7 @@ locator:
     - type: TOP
       range: &range
         min: $meta.yml:bottom-y
-        max: -30
+        max: 0
     - type: PATTERN
       range: *range
       pattern:
