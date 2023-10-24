@@ -24,6 +24,7 @@ stages:
       OCEAN: 2
       ICEBERG_OCEAN: 2
       FROZEN_OCEAN: 3
+      ABYSSAL_ALLEYS: 2
       ARCTIC_ARCHES: 1
   - type: REPLACE
     from: ocean_medium
@@ -35,6 +36,7 @@ stages:
     to:
       OCEAN: 3
       DEEP_OCEAN: 2
+      ABYSSAL_ALLEYS: 2
       STONEGATE_SEAS: 1
   - type: REPLACE
     from: ocean_warm
@@ -48,5 +50,6 @@ stages:
       DEEP_OCEAN: 2
       TROPICAL_OCEAN: 3
       TROPICAL_DEEP_OCEAN: 2
+      ABYSSAL_ALLEYS: 2
       CORAL_OCEAN: 4
       STONEGATE_SEAS: 1
