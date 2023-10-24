@@ -1,0 +1,85 @@
+id: GLOOMY_GORGE
+type: BIOME
+vanilla: minecraft:plains
+extends: [ CARVING_LAND, BASE ]
+
+color: $biomes/colors.yml:PLAINS
+
+tags:
+  - USE_GLOOMY_GORGE_RIVER
+
+colors:
+  sky: 0xbee6d7
+  fog: 0xede1ce
+  grass: 0x79CF85
+  foliage: 0x79CF85
+
+vars: &variables
+  base: 73
+  height: 25
+  valleyDepth: 50
+  valleyCutoff: 0.15
+  valleyCutoffStart: -0.97
+  caveStrength: 35
+
+terrain:
+  sampler:
+    dimensions: 3
+    type: EXPRESSION
+    variables: *variables
+    expression: |
+      -y + base
+      + valleyDepth * (clamp(valleys(x,z), valleyCutoffStart, valleyCutoffStart + valleyCutoff) - valleyCutoffStart) * (1 / valleyCutoff)
+      + lerp(valleys(x,z), valleyCutoffStart, 0.2, valleyCutoffStart + valleyCutoff, 1) * height * surfaceOffset(x,z)
+      - abs(caves(x,y * 1.85,z) * caveStrength) * lerp(y, 65, 0, 70, 1)
+    samplers:
+      surfaceOffset:
+        dimensions: 2
+        type: FBM
+        sampler:
+          type: OPEN_SIMPLEX_2S
+          frequency: 0.006
+        octaves: 3
+        lacunarity: 4
+        gain: 0.3
+      caves:
+        dimensions: 3
+        type: OPEN_SIMPLEX_2S
+        frequency: 0.018
+      valleys:
+        dimensions: 2
+        type: CELLULAR
+        frequency: 0.005
+        distance: Euclidean
+        return: Distance2Sub
+
+palette:
+  - GRASS_SANDY_VARIATION: 319
+  - GRASS_PODZOL_MUDDY: 71
+  - SAND: 64
+  - << meta.yml:palette-bottom
+
+slant:
+  - threshold: 0.7
+    palette:
+      - ROCKY_SLANT_DARK: 319
+      - << meta.yml:palette-bottom
+
+features:
+  preprocessors:
+    - DEL_FLOATING_BLOCKS
+  landforms:
+    - GRANITE_BOULDERS
+    - SMALL_GRANITE_BOULDER_PATCHES
+  flora:
+    - GRASS
+    - LARGE_CEILING_VINES
+    - POPPY_PATCH
+    - PEONY_PATCH
+    - LILAC_PATCH
+    - SMALL_DRIPLEAF
+    - BAMBOO_PATCHES
+    - CROSSING_STONE_VINES
+    - MOUNTAIN_GLOW_BERRIES
+  trees:
+    - MESQUITE_TREES

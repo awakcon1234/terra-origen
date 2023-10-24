@@ -81,6 +81,12 @@ stages:
       FROZEN_FUNGI_RIVER: 1
     sampler: *riverSampler
   - type: REPLACE
+    from: USE_GLOOMY_GORGE_RIVER
+    to:
+      SELF: 1
+      GLOOMY_GORGE_RIVER: 1
+    sampler: *riverSampler
+  - type: REPLACE
     from: USE_RIVER
     to:
       SELF: 1
