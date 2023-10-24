@@ -43,6 +43,11 @@ Here is a full list of all biomes used in Origen. Note that some biomes are alre
 > ![2023-09-04_21 59 24_cropped](https://github.com/Rearth/Origen/assets/10100603/e7210ff4-d62d-42c8-93c2-39925123cdc5)
 Giant plateau with sharp overhangs surrounding it. These overhangs are supported by large stone pillars. A savanna-like environment is found at and around the bottom of the plateau, while the top is covered with all sorts of trees.
 
+**Snowy Spires**
+
+> ![2023-10-20_15 56 28](https://github.com/Rearth/Origen/assets/10100603/7a63755b-334c-4309-9ffc-8a6c913d5c8a)
+A snowy mesa biome, with giant terracotta pillars. The sandy ground is mostly covered in snow. The pillars are partialy frozen, with large ice chunks often connecting them, and icicles hanging from them.
+
 **Black Forest**
 
 > ![2023-08-27_16 23 50](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/6e802a05-1993-4720-a23c-64bbfbe99782)
@@ -178,6 +183,11 @@ Giant cave biome that usually is found around -20 to +40. Contains a big lava la
 
 > ![2023-09-08_21 29 17](https://github.com/Rearth/Origen/assets/10100603/373ab5da-44a1-45b5-8272-c4138e050bb3)
 Underground cavern biome, with a similar shape to the inferno isles. However, this biome is made from terracotta walls, with huge pillars of terracotta in the center.
+
+**Vine Vault**
+
+> ![2023-10-20_15 19 00](https://github.com/Rearth/Origen/assets/10100603/0b88368c-6261-4189-bda2-3002d4a71abf)
+Huge cave, with both the floor and the ceiling covered in lush vegetation. There are crossing and glowing vines on the ceiling, wiih moss and jungle trees on the floor. Enormous pillars connect the floor to the ceiling.
 
 ** TODO **
 
