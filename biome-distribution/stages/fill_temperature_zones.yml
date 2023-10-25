@@ -28,10 +28,10 @@ stages:
       FOSSILIZED_FENLANDS: 3
       MURKY_MARSHLANDS: 2
       VERTICAL_VISTAS: 2
-      VERDANT_VALLEYS: 3
-      BLACK_FOREST: 2
+      VERDANT_VALLEYS: 2
+      BLACK_FOREST: 1
       FLOWERING_FOREST: 1
-      TALL_TIMBERLAND: 2
+      TALL_TIMBERLAND: 1
       _pillow_plains: 2
       _secluded_valleys: 1
       SAKURA_STREAMS: 1
@@ -39,8 +39,8 @@ stages:
       BADLANDS_BALCONIES: 2
       SCARLET_SANCTUARY: 2
       GLOOMY_GORGE: 2
-      ROCKY_REFUGE: 1
-      _plateao: 1
+      ROCKY_REFUGE: 2
+      _plateao: 2
       # LAND_MEDIUM_A: 1
       # LAND_MEDIUM_B: 1
   - type: REPLACE
@@ -53,7 +53,7 @@ stages:
     to:
       MESA_MONUMENTS: 3
       LUSH_LOOPS: 2
-      CARVING_CREAKS: 3
+      CARVING_CREAKS: 2
       ARID_ARBORETUM: 2
       SALT_FLATS: 1
       DESERT_SPIKES_GOLD: 1
