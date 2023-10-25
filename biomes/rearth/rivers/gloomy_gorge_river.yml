@@ -2,7 +2,7 @@ id: GLOOMY_GORGE_RIVER
 type: BIOME
 extends: [RIVER, GLOOMY_GORGE]
 
-original-noise: &originalNoise $biomes/rearth/variants/gloomy_gorge.yml:terrain.sampler # Original noise to be turned into river
+original-noise: &originalNoise $biomes/rearth/base/eq_eroded_valley_mountains.yml:terrain.sampler # Original noise to be turned into river
 
 vars: &variables
   ceilingHeight:    90  # Base Y level of the ceiling
