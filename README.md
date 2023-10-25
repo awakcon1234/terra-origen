@@ -43,6 +43,11 @@ Here is a full list of all biomes used in Origen. Note that some biomes are alre
 > ![2023-09-04_21 59 24_cropped](https://github.com/Rearth/Origen/assets/10100603/e7210ff4-d62d-42c8-93c2-39925123cdc5)
 Giant plateau with sharp overhangs surrounding it. These overhangs are supported by large stone pillars. A savanna-like environment is found at and around the bottom of the plateau, while the top is covered with all sorts of trees.
 
+**Gloomy Gorge**
+
+> ![2023-10-24_22 53 48_2](https://github.com/Rearth/Origen/assets/10100603/91e68bbe-5a3b-408b-93a8-b93b78b782a0)
+High mountains, with deep valleys and dark, eroded cliffs running through them. The mountainsides are glowing in the dark, and the whole environment is surrounded by all kinds of lush vegetation.
+
 **Snowy Spires**
 
 > ![2023-10-20_15 56 28](https://github.com/Rearth/Origen/assets/10100603/7a63755b-334c-4309-9ffc-8a6c913d5c8a)
@@ -62,6 +67,11 @@ An environment made of very high terracotta plateous, with large canyons and riv
 
 > ![2023-08-09_23 40 35](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c8fb50da-f7cd-4222-8200-b8dd74e2b6f6)
 The dinosaur biome. Mostly flat with some segmented elevations. Can spawn dinosaur fossils, which usually have multiple "rib" segments and a chance to include a giant head on the front.
+
+**Arid Arboretum**
+
+> ![2023-10-25_22 09 37](https://github.com/Rearth/Origen/assets/10100603/cd92b628-a35d-456c-9b97-69e9bf12e609)
+Badlands biome that has been overtaken by an evergreen forest. The arid ground is a mix of grass and sand, with granite patches and giant terracotta pillars, covered in vegetation.
 
 **Bamboo Basins**
 
@@ -206,6 +216,11 @@ Towering cliffs biome, only found at the bigger coasts. The biome has a mostly f
 
 > ![2023-09-08_17 59 02](https://github.com/Rearth/Origen/assets/10100603/5e903435-c998-4eea-a078-b0dfc81e4c3c)
 Medium-depth ocean, with giant stone arches under and on the surface. The arches are made mossy and partially green, with lush green foliage covering it.
+
+**Abyssal Alleys**
+
+> ![2023-10-24_21 25 44](https://github.com/Rearth/Origen/assets/10100603/4995f68d-3df5-4ef5-ad36-c95c8a92e58e)
+Deep ocean variant, with trenches reaching all the way down to bedrock level. There are large, semi-open caves to explore, with fossils at the bottom of the trenches and corals near the top.
 
 **Arctic Arches**
 
