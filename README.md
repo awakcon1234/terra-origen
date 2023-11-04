@@ -113,6 +113,11 @@ Covered by giant terracotta pillars, the mesa monuments biome is a warm badlands
 > ![2023-09-21_23 41 42](https://github.com/Rearth/Origen/assets/10100603/b31639fa-60fe-4c40-b0c4-a66617d2a9ed)
 Forested badlands biome, with large, overhanging terracotta boulders. The boulders are covered in leaf vines, and there are sparse tree patches on the floor.
 
+**White Wallows**
+
+> ![2023-10-25_23 12 48](https://github.com/Rearth/Origen/assets/10100603/1ef4fe83-dad1-4f00-8bed-1e83039bebb1)
+Identified by white trenches dug through eroded mountains, the white wallows are home to giant azalea trees. The mountains also house white flowers and deep valleys.
+
 **Murky Marshlands**
 
 > ![2023-08-27_14 58 22](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/c3b66b84-9597-46b0-99f9-fa0d2b7db7d0)
