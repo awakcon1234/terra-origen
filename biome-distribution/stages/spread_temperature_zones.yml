@@ -10,6 +10,6 @@ stages:
         type: EXPRESSION 
         expression: temperature(x, z)
     to:
-      cold: 1
-      medium: 1
-      warm: 1
+      cold: 2
+      medium: 4
+      warm: 3
