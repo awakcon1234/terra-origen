@@ -1,0 +1,59 @@
+stages:
+  - type: REPLACE
+    from: _patchwork_cold
+    sampler: &patchworkSampler
+      dimensions: 2
+      type: DOMAIN_WARP
+      amplitude: 40
+      warp:
+        type: OPEN_SIMPLEX_2
+        frequency: 1 / ${customization.yml:biomeSpread.cellDistance} * 4
+      sampler:
+        type: EXPRESSION
+        expression: |
+          if (cells(x,z) > 0,
+            (cells(x * 2 ,z * 1.3) - 0.5) * 2,
+            gradient(x,z))
+        samplers:
+          cells:
+            dimensions: 2
+            type: CELLULAR
+            return: CellValue
+            frequency: 1 / ${customization.yml:biomeSpread.cellDistance} * 2
+            seed: 3478596
+          gradient:
+            dimensions: 2
+            type: OPEN_SIMPLEX_2
+            frequency: 1 / ${customization.yml:biomeSpread.cellDistance} / 1.6
+    to:
+      FROSTY_FINGERS: 2
+      COLD_STEPPE: 3
+      SNOWY_MEADOW: 3
+      SNOWY_MOUNTAINS: 3
+      TUNDRA_TRACKS: 3
+      SNOWY_SPIRES: 2
+  - type: REPLACE
+    from: _patchwork_medium
+    sampler: *patchworkSampler
+    to:
+      VERTICAL_VISTAS: 2
+      BLACK_FOREST: 3
+      SECLUDED_VALLEY_OUTER: 3
+      MURKY_MARSHLANDS: 3
+      FOSSILIZED_FENLANDS: 3
+      VERDANT_VALLEYS: 3
+      FOLIAGE_FORTRESS_OUTER: 3
+      BADLANDS_BALCONIES: 3
+      TALL_TIMBERLAND: 3
+      GLOOMY_GORGE: 3
+      WHITE_WALLOWS: 2
+  - type: REPLACE
+    from: _patchwork_warm
+    sampler: *patchworkSampler
+    to:
+      SALT_FLATS: 2
+      MESA_MONUMENTS: 3
+      DESERT_SPIKES_GOLD: 3
+      OVERGROWN_CLIFFS: 3
+      WATERY_WILDS: 3
+      DESERT: 2

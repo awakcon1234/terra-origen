@@ -44,7 +44,7 @@ terrain:
       surfaceBaseMountains:
         dimensions: 2
         type: OPEN_SIMPLEX_2S
-        frequency: 0.004
+        frequency: ${customization.yml:biomeSpread.mountainFrequency}
       terraceSizeVariation:
         dimensions: 2
         type: OPEN_SIMPLEX_2S

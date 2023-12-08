@@ -13,7 +13,7 @@ colors:
   water-fog: 0x44aff5
 
 palette:
-  - BLOCK:minecraft:magenta_wool: $meta.yml:top-y
+  - BLOCK:minecraft:yellow_wool: $meta.yml:top-y
 
 
 terrain:

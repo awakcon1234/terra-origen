@@ -36,5 +36,3 @@ features:
     - OXEYE_DAISY_PATCH
     - CORNFLOWER_PATCH
     - ALLIUM_PATCH
-  postprocessors:
-    - TREE_SNOW

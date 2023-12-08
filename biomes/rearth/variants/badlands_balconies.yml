@@ -40,7 +40,7 @@ terrain:
       mountainBasicShape: &baseShape
         dimensions: 2
         type: OPEN_SIMPLEX_2S
-        frequency: 0.004
+        frequency: ${customization.yml:biomeSpread.mountainFrequency}
       vallyNoise:
         dimensions: 2
         type: FBM

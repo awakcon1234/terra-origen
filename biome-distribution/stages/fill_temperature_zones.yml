@@ -12,11 +12,11 @@ stages:
       SNOWY_MEADOW: 1
       SNOWY_MOUNTAINS: 1
       MOUNTAIN_MIRRORS: 2
-      ALPINE_ASCENDANCY: 1
+      ALPINE_ASCENDANCY: 2
       BARE_BOULDERFIELDS: 1
       TUNDRA_TRACKS: 2
-      FROZEN_FUNGI: 1
-      SNOWY_SPIRES: 2
+      FROZEN_FUNGI: 2
+      SNOWY_SPIRES: 3
   - type: REPLACE
     from: medium
     sampler:

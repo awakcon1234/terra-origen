@@ -32,11 +32,9 @@ biomes:
         - << biome-distribution/stages/oceans.yml:stages
         - << biome-distribution/stages/spread_temperature_zones.yml:stages
         - << biome-distribution/stages/fill_temperature_zones.yml:stages
+        - << biome-distribution/stages/fill_patchwork.yml:stages
         - << biome-distribution/stages/special/border_biomes.yml:stages
 
-        - type: FRACTAL_EXPAND
-          sampler:
-            type: WHITE_NOISE
         - type: FRACTAL_EXPAND
           sampler:
             type: WHITE_NOISE

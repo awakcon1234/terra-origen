@@ -1,6 +1,6 @@
 riverSampler: &riverSampler
   type: EXPRESSION
-  expression: if(-abs(rivers(x, z)) > -0.05, 1, -1)
+  expression: if(-abs(rivers(x, z)) > -0.04, 1, -1)
   samplers:
     rivers:
       dimensions: 2

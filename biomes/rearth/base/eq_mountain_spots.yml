@@ -23,7 +23,7 @@ terrain:
         type: FBM
         sampler:
           type: OPEN_SIMPLEX_2S
-          frequency: 0.004
+          frequency: ${customization.yml:biomeSpread.mountainFrequency}
         octaves: 3
         lacunarity: 2
         gain: 0.5

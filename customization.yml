@@ -1,12 +1,12 @@
 biomeSpread:
   # Basic size of biomes (distance between 2 biome centers)
   # Increase to make biomes bigger
-  cellDistance: 370
+  cellDistance: 350
 
   # how far biome centers can vary away from their centers
   # Increase to make biome sizes vary more (scale 0-1)
 
-  cellJitter: 0.5
+  cellJitter: 0.7
 
   # Frequency of rivers. Increase to make rivers closer together and smaller, decrease for bigger, more spaced out rivers
   riverScale: 0.0013
@@ -22,6 +22,8 @@ biomeSpread:
     size: 0.83          # Sizing of the invidial sinkholes. Inversed, increase to make them smaller. Scale 0-1
     borderSize: 0.02   # Size of the border biome around the sinkhole
     frequency: 0.0025   # frequency of sinkhole placement. Increase for more smaller sinkholes, decrease for fewer, but larger ones
+
+  mountainFrequency: 0.004  # shared frequence of some larger mountain biomes, allows them to blend easier
 
 # the below values are only partially used and will be removed/moved at some point in the future
 
@@ -118,7 +120,7 @@ elevation-flatlands-threshold: 0.1
 # Temperature
 # ---
 
-temperature-scale: 0.6
+temperature-scale: 0.4
 # Controls the scale of temperature zones. Most biomes are placed according to
 # a temperature map so hot biomes can't generate next to cold biomes, as well as
 # allowing for biomes of similar temperatures to generate together. Increasing this
