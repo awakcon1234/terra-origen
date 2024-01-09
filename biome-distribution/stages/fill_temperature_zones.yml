@@ -17,6 +17,7 @@ stages:
       TUNDRA_TRACKS: 2
       FROZEN_FUNGI: 2
       SNOWY_SPIRES: 3
+      _patchwork_cold: 15
   - type: REPLACE
     from: medium
     sampler:
@@ -42,6 +43,7 @@ stages:
       ROCKY_REFUGE: 2
       WHITE_WALLOWS: 2
       _plateao: 2
+      _patchwork_medium: 22
       # LAND_MEDIUM_A: 1
       # LAND_MEDIUM_B: 1
   - type: REPLACE
@@ -52,7 +54,7 @@ stages:
       return: CellValue
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
     to:
-      MESA_MONUMENTS: 3
+      MESA_MONUMENTS: 2
       LUSH_LOOPS: 2
       CARVING_CREAKS: 2
       ARID_ARBORETUM: 2
@@ -62,5 +64,6 @@ stages:
       CANOPY_CASCADES: 2
       WATERY_WILDS: 2
       _desert: 2
+      _patchwork_warm: 15
       # LAND_WARM_A: 1
       # LAND_WARM_B: 1

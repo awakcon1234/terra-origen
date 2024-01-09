@@ -27,7 +27,6 @@ biomes:
           ocean: 1
           land: 1
       stages:
-        # - << biome-distribution/stages/special/canyons.yml:stages
         - << biome-distribution/stages/special/canyons.yml:stages
         - << biome-distribution/stages/coasts.yml:stages
         - << biome-distribution/stages/fill_coasts.yml:stages
@@ -49,7 +48,5 @@ biomes:
         - type: SMOOTH
           sampler:
             type: WHITE_NOISE
-
-        # - << biome-distribution/stages/special/add_sinkholes.yml:stages
 
             

@@ -4,31 +4,12 @@ stages:
     sampler:
       type: CELLULAR
       jitter: ${customization.yml:biomeSpread.cellJitter}
-      return: CellValue
-      frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
-    to:
-      _patchwork: 3
-      _normal: 4
-  - type: REPLACE
-    from: _normal
-    sampler:
-      type: CELLULAR
-      jitter: ${customization.yml:biomeSpread.cellJitter}
       return: NoiseLookup
       frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
       lookup:
         type: EXPRESSION 
         expression: temperature(x, z)
     to:
-      cold: 3
+      cold: 4
       medium: 4
-      warm: 3
-  - type: REPLACE
-    from: _patchwork
-    sampler:
-      type: EXPRESSION 
-      expression: temperature(x, z)
-    to:
-      _patchwork_cold: 3
-      _patchwork_medium: 4
-      _patchwork_warm: 3
+      warm: 4
