@@ -103,6 +103,11 @@ Terracotta-covered mountains, with flat areas inbetween, and some terraces along
 > ![2023-08-23_22 49 45](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/005a6e8c-fd1c-4433-b502-8ae629c765ae)
 A lush jungle environment, with massive eye-catching stone arches looping through the skies.
 
+**Sandy Splits**
+
+> ![2024-01-09_00 14 05](https://github.com/Rearth/Origen/assets/10100603/b8b73f8d-9bc4-41dd-83fb-861b710a018f)
+Large canyon biome that can carve through any land biome. Very deep, with terracotta walls and sand with vegetation at the bottom.
+
 **Mesa Monuments**
 
 > ![2023-07-26_23 29 34](https://github.com/Rearth/UnnamedTerraConfigPack/assets/10100603/cfb8098b-4cab-4e1d-b442-b0d2372fa024)
@@ -117,6 +122,11 @@ Forested badlands biome, with large, overhanging terracotta boulders. The boulde
 
 > ![2023-10-25_23 12 48](https://github.com/Rearth/Origen/assets/10100603/1ef4fe83-dad1-4f00-8bed-1e83039bebb1)
 Identified by white trenches dug through eroded mountains, the white wallows are home to giant azalea trees. The mountains also house white flowers and deep valleys.
+
+** Icy Incisions**
+
+> ![2024-01-09_21 58 52](https://github.com/Rearth/Origen/assets/10100603/cb6730fb-dcc4-4756-936d-975bfe8ff73a)
+A deep, frozen trench carving through any other cold biome. Covered in webs of snow, with a few snow-covered trees at the bottom
 
 **Murky Marshlands**
 
