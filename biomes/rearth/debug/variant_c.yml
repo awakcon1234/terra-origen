@@ -1,7 +1,5 @@
 id: VARIANT_C
 type: BIOME
-extends:
-  - BASE
 color: $biomes/colors.yml:PLAINS
 
 vanilla: minecraft:plains

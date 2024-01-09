@@ -6,7 +6,7 @@ biomes:
     - << biome-distribution/extrusions/add_deep_dark.yml:extrusions
   provider:
     type: PIPELINE
-    resolution: 6
+    resolution: 4
     blend:
       amplitude: 6
       sampler:
@@ -27,6 +27,8 @@ biomes:
           ocean: 1
           land: 1
       stages:
+        # - << biome-distribution/stages/special/canyons.yml:stages
+        - << biome-distribution/stages/special/canyons.yml:stages
         - << biome-distribution/stages/coasts.yml:stages
         - << biome-distribution/stages/fill_coasts.yml:stages
         - << biome-distribution/stages/oceans.yml:stages
