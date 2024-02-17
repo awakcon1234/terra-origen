@@ -32,4 +32,4 @@ extrusions:
       - VINE_VAULT: 1
     range:
       min: -30
-      max: 45
+      max: 40

@@ -6,16 +6,28 @@ stages:
       type: EXPRESSION
       variables: 
         edgeThreshold: ${customization.yml:biomeSpread.borderBiomes.edgeThreshold}
-      expression: if(cells(x,z) < -edgeThreshold, 1, -1)
+      expression: |
+        abs(edges(x,z)) - edgeThreshold - 0.1 + cells(x,z) * 0.09
+        // if(cells(x,z) < -edgeThreshold, 1, -1)
       samplers:
         cells:
           dimensions: 2
           type: CELLULAR
           jitter: ${customization.yml:biomeSpread.cellJitter}
-          frequency: 1 / ${customization.yml:biomeSpread.cellDistance}
-    to: # 0 = outer, 1 = inner
-      PILLOW_PLAINS_OUTER: 1
-      PILLOW_PLAINS_INNER: 1
+          frequency: 1 / ${customization.yml:biomeSpread.cellDistance}  
+        edges:
+          dimensions: 2
+          type: "CELLULAR"
+          return: "Distance2Sub"
+          jitter: ${customization.yml:biomeSpread.cellJitter}
+          frequency: 1 / ${customization.yml:biomeSpread.cellDistance}  
+    to: # -1 = inner, 1 = outer, real range = -1:0.2
+      PILLOW_PLAINS_INNER: 88
+      PILLOW_PLAINS_MIDDLE: 12
+      PILLOW_PLAINS_OUTER: 100
+      # VARIANT_C: 85
+      # VARIANT_H: 15
+      # VARIANT_F: 100
   - type: REPLACE
     from: _secluded_valleys
     sampler:
