@@ -2,7 +2,7 @@
 
 > This pack is still in a testing phase, so bugs and issues are to be expected
 
-An overworld configuration pack for minecraft 1.20 and terra 6.4 and higher. It is based on the default terra overworld config pack v2.0, which you can find 
+An overworld configuration pack for minecraft 1.20 and terra 6.4 and higher. It is based on the default Terra overworld config pack v2.0, which you can find 
 [here](https://github.com/PolyhedralDev/TerraOverworldConfig/tree/2.0). A lot of content is used from the default pack, especially regarding the terrain features such as trees, flora and palettes.
 
 Origen focuses on adding a new and more creative / diverse terrain generation, without using any new blocks or items. This means that it is compatible with vanilla installations.
@@ -10,15 +10,15 @@ Origen focuses on adding a new and more creative / diverse terrain generation, w
 You can find Terra - the main project this config pack is designed for
 [here](https://github.com/PolyhedralDev/Terra).
 
-Huge thanks to everyone on the terra discord that has helped with my countless questions and with giving feedback. Most notably to Astrash and Aureus, without them this pack wouldn't have made it anywhere.  Some of the screenshots are taken with the [barebones texture pack](https://www.curseforge.com/minecraft/texture-packs/bb).
+Huge thanks to everyone on the Terra Discord that has helped with my countless questions and with giving feedback. Most notably to Astrash and Aureus, without them this pack wouldn't have made it anywhere.  Some of the screenshots are taken with the [Bare Bones texture pack](https://modrinth.com/resourcepack/bare-bones).
 
-Most top level settings, such as biome and river sizes, can be found in the file [costumization.yml](customization.yml).
+Most top level settings, such as biome and river sizes, can be found in the file [customization.yml](customization.yml).
 
 ## Installation
 
-Origen is just a config pack for the terra mod. Make sure you have terra installed first. You can find it on [modrinth](https://modrinth.com/plugin/terra). 
+Origen is just a config pack for the Terra mod. Make sure you have Terra installed first. You can find it on [Modrinth](https://modrinth.com/plugin/terra). 
 
-You can grab the latest release from the github [releases section](https://github.com/Rearth/Origen/releases/latest), from there just download the origen.zip file, and add it to your terra packs. For more information on installing terra config packs, see the [docs here](https://terra.polydev.org/config/pack-installation.html).
+You can grab the latest release from the Github [releases section](https://github.com/Rearth/Origen/releases/latest), from there just download the origen-v\*.\*.\*.zip file, and copy it to your Terra pack directory. For more information on installing Terra config packs, see the [docs here](https://terra.polydev.org/config/pack-installation.html).
 
 ---
 
