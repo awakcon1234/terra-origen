@@ -1,4 +1,4 @@
-id: PINK_PETALS
+id: EYEBLOSSOM_PATCH
 type: FEATURE
 
 distributor:
@@ -7,8 +7,8 @@ distributor:
     - type: SAMPLER
       sampler:
         type: POSITIVE_WHITE_NOISE
-        salt: 8172
-      threshold: 0.7
+        salt: 2217
+      threshold: 0.4
     - type: SAMPLER
       sampler:
         type: PROBABILITY
@@ -19,7 +19,7 @@ distributor:
             type: GAUSSIAN
           sampler:
             type: OPEN_SIMPLEX_2
-      threshold: 0.5
+      threshold: 0.2
 
 locator:
   type: AND
@@ -45,5 +45,5 @@ locator:
 
 structures:
   distribution:
-    type: CONSTANT
-  structures: pink_petals
+    type: WHITE_NOISE
+  structures: BLOCK:minecraft:closed_eyeblossom

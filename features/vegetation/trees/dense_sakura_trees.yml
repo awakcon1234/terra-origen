@@ -1,33 +1,19 @@
-id: PINK_PETALS
+id: DENSE_SAKURA_TREES
 type: FEATURE
 
 distributor:
-  type: AND
-  distributors:
-    - type: SAMPLER
-      sampler:
-        type: POSITIVE_WHITE_NOISE
-        salt: 8172
-      threshold: 0.7
-    - type: SAMPLER
-      sampler:
-        type: PROBABILITY
-        sampler:
-          type: DOMAIN_WARP
-          amplitude: 5
-          warp:
-            type: GAUSSIAN
-          sampler:
-            type: OPEN_SIMPLEX_2
-      threshold: 0.5
+  type: PADDED_GRID
+  width: 7
+  padding: 5
+  salt: 5972
 
 locator:
   type: AND
   locators:
     - type: TOP
       range: &range
-        min: 62
-        max: 319
+        min: 64
+        max: 255
     - type: PATTERN
       range: *range
       pattern:
@@ -46,4 +32,5 @@ locator:
 structures:
   distribution:
     type: CONSTANT
-  structures: pink_petals
+  structures:
+    - sakura_tree_procedural: 1

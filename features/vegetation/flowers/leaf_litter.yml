@@ -1,4 +1,4 @@
-id: PINK_PETALS
+id: LEAF_LITTER
 type: FEATURE
 
 distributor:
@@ -7,7 +7,7 @@ distributor:
     - type: SAMPLER
       sampler:
         type: POSITIVE_WHITE_NOISE
-        salt: 8172
+        salt: 9021
       threshold: 0.7
     - type: SAMPLER
       sampler:
@@ -46,4 +46,4 @@ locator:
 structures:
   distribution:
     type: CONSTANT
-  structures: pink_petals
+  structures: leaf_litter

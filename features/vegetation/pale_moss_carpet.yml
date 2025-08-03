@@ -1,4 +1,4 @@
-id: PINK_PETALS
+id: PALE_MOSS_CARPET
 type: FEATURE
 
 distributor:
@@ -7,7 +7,7 @@ distributor:
     - type: SAMPLER
       sampler:
         type: POSITIVE_WHITE_NOISE
-        salt: 8172
+        salt: 6521
       threshold: 0.7
     - type: SAMPLER
       sampler:
@@ -32,7 +32,10 @@ locator:
       range: *range
       pattern:
         type: MATCH_SET
-        blocks: $features/vegetation/meta.yml:plantable-blocks
+        blocks:
+          - minecraft:pale_moss_block
+          - minecraft:pale_oak_wood
+          - minecraft:grass_block
         offset: -1
     - type: PATTERN
       range: *range
@@ -46,4 +49,4 @@ locator:
 structures:
   distribution:
     type: CONSTANT
-  structures: pink_petals
+  structures: BLOCK:minecraft:pale_moss_carpet

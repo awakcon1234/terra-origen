@@ -1,20 +1,20 @@
-id: GRASS_CAVES
+id: FIREFLY_BUSHES
 type: FEATURE
 
 distributor:
   type: SAMPLER
   sampler:
     type: POSITIVE_WHITE_NOISE
-    salt: 7544
-  threshold: 0.125
+    salt: 6304
+  threshold: 0.05
 
 locator:
   type: AND
   locators:
     - type: SURFACE
       range: &range
-        min: $meta.yml:bottom-y
-        max: ${meta.yml:ocean-level} + 3
+        min: 62
+        max: 319
     - type: PATTERN
       range: *range
       pattern:
@@ -24,7 +24,5 @@ locator:
 
 structures:
   distribution:
-    type: WHITE_NOISE
-  structures:
-    - BLOCK:minecraft:short_grass: 6
-    - tall_grass: 1
+    type: CONSTANT
+  structures: firefly_bush
