@@ -7,7 +7,11 @@ extends:
   - BASE
 color: $biomes/colors.yml:MARSH
 
-vanilla: minecraft:swamp
+vanilla: minecraft:river
+
+colors:
+  grass: 0x61b354
+  foliage: 0x75c458
 
 tags:
   - LAND_CAVES
@@ -16,13 +20,13 @@ tags:
 palette:
   - GRASS: $meta.yml:top-y
   - GRASS_MARSH: ${meta.yml:ocean-level} + 11
-  - SAND: $meta.yml:ocean-level
+  - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
 
 slant:
   - threshold: 0.4
     palette:
-      - BLOCK:minecraft:stone: $meta.yml:top-y
+      - << meta.yml:palette-slant-generic
       - << meta.yml:palette-bottom
 
 features:

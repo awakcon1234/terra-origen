@@ -16,7 +16,7 @@ locator:
     # Match air underground
     - type: PATTERN
       range: &range
-        min: ${meta.yml:bottom-y} + 14
+        min: ${meta.yml:bottom-y} + 13
         max: ${meta.yml:deepslate-top} - 7
       pattern:
         type: MATCH_AIR
@@ -34,7 +34,7 @@ locator:
             dimensions: 3
             type: OPEN_SIMPLEX_2
             frequency: 0.015
-  
+
     # Punch holes into walls using cellular
     - type: SAMPLER_3D
       range: *range

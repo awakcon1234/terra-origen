@@ -85,3 +85,9 @@ terrain:
           type: OPEN_SIMPLEX_2
           frequency: 0.01
           salt: 3
+
+  # Additional, non-breaking detailed sampler from incoming changes
+  sampler-2d-detailed:
+    type: EXPRESSION
+    expression: scale * elevationDetailed(x, z)
+    variables: *variables

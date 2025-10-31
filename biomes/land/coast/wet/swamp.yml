@@ -2,7 +2,7 @@ id: SWAMP
 type: BIOME
 extends:
   - ENVIRONMENT_LAND_MARITIME_WET
-  - EQ_SWAMP
+  - EQ_MANGROVE_SWAMP
   - CARVING_OCEAN
   - BASE
 color: $biomes/colors.yml:SWAMP
@@ -28,6 +28,7 @@ slant:
   - threshold: 0.4
     palette:
       - GRASS_MUDDY: $meta.yml:top-y
+      - << meta.yml:palette-underwater
       - << meta.yml:palette-bottom
 
 slant-depth: 1
@@ -37,7 +38,7 @@ features:
     - SWAMP_WATER
   flora:
     - GRASS
-    - FIREFLY_BUSHES
+    - FIREFLY_BUSH
     - POPPY_PATCH
     - DANDELION_PATCH
     - BLUE_ORCHID_PATCH
@@ -47,3 +48,6 @@ features:
     - OAK_BUSHES
     - SWAMP_TREES
     - DEAD_SWAMP_TREES
+  structures:
+    - MOB_ROOMS
+    - SPARSE_FOSSILS
