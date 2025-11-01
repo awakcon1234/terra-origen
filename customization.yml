@@ -51,6 +51,12 @@ continental-offset: 1
 # Positive values increase land coverage, negative values increase ocean coverage.
 # Default: 0
 
+continental-spread: 1
+# Controls how continents are distributed across the world. Higher values create more
+# spread out continents, lower values create more tightly packed continents.
+# This is an alias for continental-scale used by some samplers.
+# Default: 1
+
 continental-coast-width: 20
 # Default: 30
 
