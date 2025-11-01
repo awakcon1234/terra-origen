@@ -46,6 +46,11 @@ continental-scale: 1
 # you should change continental-offset instead.
 # Default: 2
 
+continental-offset: 1
+# Controls the ratio of land to ocean. Higher values = more land, lower values = more ocean.
+# Positive values increase land coverage, negative values increase ocean coverage.
+# Default: 0
+
 continental-coast-width: 20
 # Default: 30
 
