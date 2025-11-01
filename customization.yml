@@ -224,6 +224,21 @@ variation-scale: 1.5
 # Default: 1.5
 
 # ---
+# Biome Spread
+# ---
+
+biomeSpread:
+  cellJitter: 1
+  # Jitter factor for cellular noise in continent border generation.
+  # Higher values create more irregular/noisy borders.
+  # Default: 1
+
+  cellDistance: 1000
+  # Base distance for cellular noise cells in continent border generation.
+  # Controls the scale of continent border variations.
+  # Default: 1000
+
+# ---
 # Caves
 # ---
 
