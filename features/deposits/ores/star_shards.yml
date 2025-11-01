@@ -1,0 +1,28 @@
+id: STAR_SHARDS_ORE
+type: FEATURE
+
+anchors:
+  - &structure
+    STAR_SHARDS_ORE: 1
+  - &densityThreshold 1/256 * ${features/deposits/distribution.yml:star_shards.averageCountPerChunk}
+  - &salt $features/deposits/distribution.yml:star_shards.salt
+  - &range $features/deposits/distribution.yml:star_shards.range
+  - &standard-deviation (${features/deposits/distribution.yml:star_shards.range.max}-${features/deposits/distribution.yml:star_shards.range.min})/6
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: *salt
+  threshold: *densityThreshold
+
+locator:
+  type: GAUSSIAN_RANDOM
+  amount: 1
+  height: *range
+  standard-deviation: *standard-deviation
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: *structure

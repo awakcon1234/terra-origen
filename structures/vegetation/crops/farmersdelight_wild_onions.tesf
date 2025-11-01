@@ -1,0 +1,14 @@
+num count = 6 + randomInt(10);
+
+for (num p = 0; p < count; p = p + 1) {
+  num theta = randomInt(360) * 3.14159/180;
+  num r = 5 - randomInt(randomInt(6) + 1);
+  num x = cos(theta) * r;
+  num z = sin(theta) * r;
+  num y = 4;
+  while (!structure(x, y, z, "plantable", "NONE")) {
+    y = y - 1;
+    if (y < -4) fail;
+  }
+  block(x, y, z, "farmersdelight:wild_onions");
+}

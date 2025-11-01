@@ -1,0 +1,9 @@
+id: STAR_SHARDS_ORE
+type: ORE
+extends: ABSTRACT_ORE
+
+material: machines:ore_star_shards
+
+size: 6
+
+exposed: 0.1

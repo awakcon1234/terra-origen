@@ -201,3 +201,10 @@ blueice:
   range:
     min: 40
     max: 65
+
+star_shards:
+  averageCountPerChunk: 1/2
+  salt: 8247
+  range:
+    min: 121
+    max: 319

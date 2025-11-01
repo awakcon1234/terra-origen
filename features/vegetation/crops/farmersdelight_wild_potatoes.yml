@@ -1,0 +1,29 @@
+id: FARMERSDELIGHT_WILD_POTATOES
+type: FEATURE
+
+distributor:
+  type: PADDED_GRID
+  width: 40
+  padding: 3
+  salt: 9703
+
+locator:
+  type: AND
+  locators:
+    - type: TOP
+      range:
+        min: ${meta.yml:ocean-level} + 3
+        max: ${meta.yml:ocean-level} + 119
+    - type: PATTERN
+      range:
+        min: ${meta.yml:ocean-level} + 3
+        max: ${meta.yml:ocean-level} + 119
+      pattern:
+        type: MATCH_SET
+        blocks: $features/vegetation/meta.yml:plantable-blocks
+        offset: -1
+
+structures:
+  distribution:
+    type: CONSTANT
+  structures: farmersdelight_wild_potatoes
