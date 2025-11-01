@@ -6,14 +6,6 @@ extends:
   - CARVING_LAND
   - BASE
 color: $biomes/colors.yml:TROPICAL_RAINFOREST
-id: TROPICAL_RAINFOREST
-type: BIOME
-extends:
-  - ENVIRONMENT_LAND_TROPICAL_EQUATORIAL
-  - EQ_LAND
-  - CARVING_LAND
-  - BASE
-color: $biomes/colors.yml:TROPICAL_RAINFOREST
 
 vanilla: minecraft:jungle
 
