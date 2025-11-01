@@ -24,7 +24,7 @@ locator:
         blocks:
           - minecraft:snow
           - minecraft:air
-          - minecraft:grass
+          - minecraft:short_grass
         offset: 0
     - type: PATTERN
       range: *range
