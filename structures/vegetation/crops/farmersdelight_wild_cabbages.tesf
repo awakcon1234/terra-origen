@@ -10,5 +10,5 @@ for (num p = 0; p < count; p = p + 1) {
     y = y - 1;
     if (y < -4) fail;
   }
-  block(x, y, z, "farmersdelight:wild_cabbages");
+  block(x, y, z, "nova:farmersdelight$wild_cabbages");
 }
