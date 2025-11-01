@@ -8,9 +8,8 @@ samplers:
           -sampler(x / continentalScale / globalScale, z / continentalScale / globalScale) + continentalOffset,
           spawnIsland(x, z)
         ),
-        # Set continentalness to spotContinentalFactor in center of spots, 0 on spot edges,
-        # and decrease quadratically moving further outwards
-        spotContinentalFactor * (1-(spotDistance(x,z)/spotRadius(x,z))^2))
+        spotContinentalFactor * (1 - (spotDistance(x, z) / spotRadius(x, z))^2)
+      )
     variables:
       # Keep the original terrain algorithm variable names for compatibility
       globalScale: $customization.yml:global-scale
