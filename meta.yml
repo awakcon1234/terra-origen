@@ -1,3 +1,44 @@
+biome-distribution:
+  # Biome distribution refers to the placement of biomes, this does *NOT*
+  # include aspects like terrain height / shape within biomes, or anything
+  # else that generates within any given biome.
+
+  # These parameters are designed to allow for easy modification of biome distribution,
+  # and are injected into the various biome distribution configs via meta-configuration.
+  # You can find these configs in the biome-providers directory, most of which contain
+  # additional more specific parameters.
+
+  continental-scale: 100
+  # Controls the scale of land / coastal / oceanic distribution. Increasing
+  # this produces larger landmasses and larger oceans, and vice-versa when
+  # decreasing it.
+  # Default: 100
+
+  # Using the HEAD adjustments for distribution scales to preserve recent tuning
+  temperature-scale: 75
+  # Controls the scale of temperature zones.
+
+  precipitation-scale: 75
+  # Controls the scale of precipitation zones.
+
+  elevation-scale: 80
+  # Controls the scale of elevation zones used for biome placement.
+
+  variation-scale: 60
+
+  cave-biome-scale: 200
+
+  river-spread-scale: 8
+
+  volcano-spread: 300
+  volcano-radius: 4
+
+  mushroom-island-spread: 300
+  mushroom-island-radius: 3
+
+  global-scale: 1
+  # Modifies the scale of everything, you can use this parameter to if you
+  # want just about every biome to be larger or smaller.
 # Misc global config stuff
 
 # World Y levels
@@ -8,12 +49,19 @@ deepslate-bottom: -12 # Y level where all stone is replaced by deepslate
 bedrock-top: -60     # Y level where deepslate starts to be replaced by bedrock
 bottom-y: -64
 
-palette-bottom: # Added to the bottom of every biome palette stack
-  - DEEPSLATE: $meta.yml:deepslate-top
-  - BEDROCK: $meta.yml:bedrock-top
-  - BLOCK:minecraft:bedrock: $meta.yml:bottom-y
-  
-palette-bedrock: # Added to the bottom of every biome palette stack that uses its own deepslate palette
-  - BEDROCK: $meta.yml:bedrock-top
-  - BLOCK:minecraft:bedrock: $meta.yml:bottom-y
-  
+strata: # Controls global Y level ranges of strata
+  deepslate:
+    top: 7 # Y level where deepslate begins to replace stone
+    bottom: -7 # Y level where all stone is replaced by deepslate
+  bedrock:
+    top: -60 # Y level where bedrock begins to replace deepslate
+    bottom: -64 # Y level where all deepslate is replaced by bedrock
+
+palette-bottom: # Added to the bottom of every palette
+  - DEEPSLATE: $meta.yml:strata.deepslate.top
+  - BEDROCK: $meta.yml:strata.bedrock.top
+  - BLOCK:minecraft:bedrock: $meta.yml:strata.bedrock.bottom
+
+palette-bedrock: # Added to the bottom of palettes that use their own deepslate palette
+  - BEDROCK: $meta.yml:strata.bedrock.top
+  - BLOCK:minecraft:bedrock: $meta.yml:strata.bedrock.bottom

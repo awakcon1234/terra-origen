@@ -16,5 +16,6 @@ colors:
 features:
   flora:
     - GRASS
+    - WILDFLOWERS
     - MIXED_FLOWER_COVER
     - BEETROOT_PATCHES

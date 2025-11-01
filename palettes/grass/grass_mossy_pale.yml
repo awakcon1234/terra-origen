@@ -1,21 +1,18 @@
-id: SHRUB_BEACH
+id: GRASS_MOSSY_PALE
 type: PALETTE
 
 layers:
   - materials:
-      - minecraft:sand: 1
-      - minecraft:coarse_dirt: 6
-      - minecraft:packed_mud: 1
       - minecraft:grass_block: 3
+      - minecraft:pale_moss_block: 1
     layers: 1
   - materials:
-      - minecraft:sand: 8
-      - minecraft:clay: 2
-      - minecraft:dirt: 3
-    layers: 4
+      - minecraft:dirt: 2
+    layers: 1
   - materials:
       - minecraft:stone: 1
     layers: 1
+
 sampler:
   dimensions: 2
   type: DOMAIN_WARP
