@@ -10,6 +10,7 @@ features:
     - CORAL_PLANTS
     - CORAL_FANS
     - SEA_PICKLES
+    - SEA_PICKLES_CORAL
   trees:
     - DENDRIFORM_REEF
     - BALL_REEF
