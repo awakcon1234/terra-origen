@@ -1,0 +1,50 @@
+id: DEEP_SEA_PICKLES
+type: FEATURE
+
+distributor:
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 8924
+  threshold: 0.95  # Higher threshold = more sparse distribution
+
+locator:
+  type: PATTERN
+  range:
+    min: ${meta.yml:deepslate-top} - 7
+    max: ${meta.yml:ocean-level} - 25  # Deeper placement
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH
+        block: minecraft:water
+        offset: 0
+      - type: MATCH_SET
+        blocks:
+          - minecraft:sand
+          - minecraft:gravel
+          - minecraft:clay
+          - minecraft:stone
+          - minecraft:granite
+          - minecraft:diorite
+          - minecraft:andesite
+        offset: -1
+
+structures:
+  distribution:
+    type: DOMAIN_WARP
+    amplitude: 2
+    warp:
+      type: GAUSSIAN
+    sampler:
+      type: OPEN_SIMPLEX_2
+      frequency: 0.02  # Lower frequency = more spread out clusters
+      salt: 9432
+  structures:
+    - BLOCK:minecraft:sea_pickle: 1
+    - blank: 8  # More blank spaces = more sparse
+
+blocks:
+  - materials:
+      - minecraft:sea_pickle
+    layers: 1

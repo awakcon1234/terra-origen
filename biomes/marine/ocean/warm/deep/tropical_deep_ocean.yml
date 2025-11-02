@@ -6,3 +6,7 @@ extends:
 color: $biomes/colors.yml:TROPICAL_DEEP_OCEAN
 
 vanilla: minecraft:warm_ocean
+
+features:
+  flora:
+    - DEEP_SEA_PICKLES  # Sparse sea pickles in deep waters
