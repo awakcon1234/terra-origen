@@ -1,18 +1,18 @@
-id: DEEP_SEA_PICKLES
+id: RIVER_SEA_PICKLES
 type: FEATURE
 
 distributor:
   type: SAMPLER
   sampler:
     type: POSITIVE_WHITE_NOISE
-    salt: 8924
-  threshold: 0.95  # Higher threshold = more sparse distribution
+    salt: 5621
+  threshold: 0.85
 
 locator:
   type: PATTERN
   range:
     min: ${meta.yml:deepslate-top} - 7
-    max: ${meta.yml:ocean-level} - 25  # Deeper placement
+    max: ${meta.yml:ocean-level} + 3
   pattern:
     type: AND
     patterns:
@@ -20,14 +20,7 @@ locator:
         block: minecraft:water
         offset: 0
       - type: MATCH_SET
-        blocks:
-          - minecraft:sand
-          - minecraft:gravel
-          - minecraft:clay
-          - minecraft:stone
-          - minecraft:granite
-          - minecraft:diorite
-          - minecraft:andesite
+        blocks: $features/vegetation/meta.yml:aquatic-plantable-blocks
         offset: -1
 
 structures:
@@ -38,15 +31,15 @@ structures:
       type: GAUSSIAN
     sampler:
       type: OPEN_SIMPLEX_2
-      frequency: 0.02  # Lower frequency = more spread out clusters
-      salt: 9432
+      frequency: 0.03
+      salt: 7744
   structures:
-    # varied sea pickle levels for sparse deep clusters
+    # varied sea pickle levels (pickles=1..4) with weighted chances
     - BLOCK:minecraft:sea_pickle[pickles=1]: 4
     - BLOCK:minecraft:sea_pickle[pickles=2]: 3
     - BLOCK:minecraft:sea_pickle[pickles=3]: 2
     - BLOCK:minecraft:sea_pickle[pickles=4]: 1
-    - blank: 8  # More blank spaces = more sparse
+    - blank: 6
 
 blocks:
   - materials:

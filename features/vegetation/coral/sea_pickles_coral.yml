@@ -49,10 +49,10 @@ structures:
       salt: 1733
   structures:
     # cluster-style entries to vary amount of pickles per coral cluster
-    - BLOCK:minecraft:sea_pickle: 1
-    - BLOCK:minecraft:sea_pickle: 1
-    - BLOCK:minecraft:sea_pickle: 1
-    - BLOCK:minecraft:sea_pickle: 1
+    - BLOCK:minecraft:sea_pickle[pickles=1]: 4
+    - BLOCK:minecraft:sea_pickle[pickles=2]: 3
+    - BLOCK:minecraft:sea_pickle[pickles=3]: 2
+    - BLOCK:minecraft:sea_pickle[pickles=4]: 1
     - blank: 8
 
 blocks:
