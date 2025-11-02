@@ -26,7 +26,7 @@ locator:
           - minecraft:bubble_coral_block
           - minecraft:horn_coral_block
           - minecraft:tube_coral_block
-          - minecraft:coral_block
+          # removed generic coral_block (parser/registry didn't accept it)
           - minecraft:brain_coral
           - minecraft:bubble_coral
           - minecraft:horn_coral
