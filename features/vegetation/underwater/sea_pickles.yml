@@ -41,7 +41,7 @@ structures:
       frequency: 0.04
       salt: 1232
   structures:
-    - sea_pickle: 1
+    - coral_plants: 1
     - blank: 5
 
 blocks:
