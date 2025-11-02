@@ -27,14 +27,14 @@ locator:
           - minecraft:horn_coral_block
           - minecraft:tube_coral_block
           # removed generic coral_block (parser/registry didn't accept it)
-          - minecraft:brain_coral
-          - minecraft:bubble_coral
-          - minecraft:horn_coral
-          - minecraft:tube_coral
-          - minecraft:brain_coral_fan
-          - minecraft:bubble_coral_fan
-          - minecraft:horn_coral_fan
-          - minecraft:tube_coral_fan
+          # - minecraft:brain_coral
+          # - minecraft:bubble_coral
+          # - minecraft:horn_coral
+          # - minecraft:tube_coral
+          # - minecraft:brain_coral_fan
+          # - minecraft:bubble_coral_fan
+          # - minecraft:horn_coral_fan
+          # - minecraft:tube_coral_fan
         offset: -1
 
 structures:
