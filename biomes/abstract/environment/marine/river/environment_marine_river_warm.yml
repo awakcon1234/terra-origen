@@ -1,0 +1,9 @@
+id: ENVIRONMENT_MARINE_RIVER_WARM
+type: BIOME
+abstract: true
+extends:
+  - ENVIRONMENT_MARINE_RIVER
+
+features:
+  flora:
+    - SEA_PICKLES

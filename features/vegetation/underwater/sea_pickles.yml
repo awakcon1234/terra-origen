@@ -1,0 +1,20 @@
+id: SEA_PICKLES
+type: FEATURE
+
+distributor:
+  type: SCATTER
+  amount: 3
+  radius: 7
+
+locator:
+  type: SURFACE
+  range: 1
+
+decorator:
+  type: STANDARD
+  frequency: 20
+
+blocks:
+  - materials:
+      - minecraft:sea_pickle
+    layers: 1
