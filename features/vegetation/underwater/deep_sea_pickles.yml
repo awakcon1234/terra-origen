@@ -33,7 +33,7 @@ locator:
 structures:
   distribution:
     type: DOMAIN_WARP
-    amplitude: 2
+    amplitude: 1
     warp:
       type: GAUSSIAN
     sampler:
@@ -41,12 +41,12 @@ structures:
       frequency: 0.02  # Lower frequency = more spread out clusters
       salt: 9432
   structures:
-    # varied sea pickle levels for sparse deep clusters
-    - BLOCK:minecraft:sea_pickle[pickles=1]: 4
+    # bias heavily to single-pickle placement in deep ocean; make level-4 very rare
+    - BLOCK:minecraft:sea_pickle[pickles=1]: 8
     - BLOCK:minecraft:sea_pickle[pickles=2]: 3
-    - BLOCK:minecraft:sea_pickle[pickles=3]: 2
+    - BLOCK:minecraft:sea_pickle[pickles=3]: 1
     - BLOCK:minecraft:sea_pickle[pickles=4]: 1
-    - blank: 8  # More blank spaces = more sparse
+    - blank: 12  # More blank spaces = more sparse
 
 blocks:
   - materials:
