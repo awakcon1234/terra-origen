@@ -2,17 +2,47 @@ id: SEA_PICKLES
 type: FEATURE
 
 distributor:
-  type: SCATTER
-  amount: 3
-  radius: 7
+  type: SAMPLER
+  sampler:
+    type: POSITIVE_WHITE_NOISE
+    salt: 7583
+  threshold: 0.8
 
 locator:
-  type: SURFACE
-  range: 1
+  type: PATTERN
+  range:
+    min: ${meta.yml:deepslate-top} - 7
+    max: ${meta.yml:ocean-level} - 5
+  pattern:
+    type: AND
+    patterns:
+      - type: MATCH
+        block: minecraft:water
+        offset: 0
+      - type: MATCH_SET
+        blocks:
+          - minecraft:sand
+          - minecraft:gravel
+          - minecraft:clay
+          - minecraft:stone
+          - minecraft:granite
+          - minecraft:diorite
+          - minecraft:andesite
+        offset: -1
 
-decorator:
-  type: STANDARD
-  frequency: 20
+structures:
+  distribution:
+    type: DOMAIN_WARP
+    amplitude: 3
+    warp:
+      type: GAUSSIAN
+    sampler:
+      type: OPEN_SIMPLEX_2
+      frequency: 0.04
+      salt: 1232
+  structures:
+    - sea_pickle: 1
+    - blank: 5
 
 blocks:
   - materials:
