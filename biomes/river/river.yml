@@ -35,6 +35,6 @@ colors:
 features:
   flora:
     - SUGAR_CANE
-    - BUSHES
-    - FIREFLY_BUSHES
+    - OAK_BUSHES
+    - FIREFLY_BUSH
     - GRASS
