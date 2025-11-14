@@ -66,4 +66,3 @@ structures:
   distribution:
     type: CONSTANT
   structures: BLOCK:minecraft:farmland[moisture=7]
-      
