@@ -6,6 +6,7 @@ vars: &variables
   base: 47
   height: 2
   density: 5
+  scale: 1
 
   # Erosion - subtracts from surrounding terrain to make the rivers look eroded
   erosion: 300 # Strength of erosion
