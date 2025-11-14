@@ -13,6 +13,10 @@ vars: &variables
   erosionYMid: 75 # The height that erosion is strongest
   erosionYMin: 66 # The height that erosion starts
 
+  depth: 0.11
+  ceilingBase: 0.1
+  ceilingHeight: 0.17
+
 terrain:
   sampler:
     dimensions: 3
@@ -31,3 +35,8 @@ terrain:
         dimensions: 3
         type: OPEN_SIMPLEX_2
         frequency: 0.03
+
+  sampler-2d:
+    type: EXPRESSION
+    expression: scale * elevationDetailed(x, z)
+    variables: *variables

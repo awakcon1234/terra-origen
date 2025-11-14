@@ -13,15 +13,22 @@ tags:
 
 vanilla: minecraft:taiga
 
+colors:
+  foliage: 0x68a464
+
 palette:
   - PACKED_MUDDY_GRASS: $meta.yml:top-y
-  - SAND: ${meta.yml:ocean-level} + 3
-  - MUDDY_BEACH: $meta.yml:ocean-level
+  - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
 
 slant-depth: 5
 
 slant:
+  - threshold: 0.8
+    palette:
+      - PACKED_MUDDY_GRASS: $meta.yml:top-y
+      - << meta.yml:palette-underwater
+      - << meta.yml:palette-bottom
   - threshold: 0.4
     palette:
       - BLOCK:minecraft:packed_mud: $meta.yml:top-y
@@ -34,3 +41,5 @@ slant:
 features:
   flora:
     - GRASS
+    - DRY_GRASS
+    - SMALL_GRANITE_BOULDER_PATCHES

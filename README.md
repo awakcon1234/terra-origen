@@ -2,7 +2,7 @@
 
 > This pack is still in a testing phase, so bugs and issues are to be expected
 
-An overworld configuration pack for minecraft 1.20 and terra 6.4 and higher. It is based on the default Terra overworld config pack v2.0, which you can find 
+An overworld configuration pack for minecraft 1.21 and terra 7.0 and higher. It is based on the default Terra overworld config pack v2.0, which you can find 
 [here](https://github.com/PolyhedralDev/TerraOverworldConfig/tree/2.0). A lot of content is used from the default pack, especially regarding the terrain features such as trees, flora and palettes.
 
 Origen focuses on adding a new and more creative / diverse terrain generation, without using any new blocks or items. This means that it is compatible with vanilla installations.
@@ -289,7 +289,7 @@ specific to a different domain of configuration:
   blocks make up the base terrain.
 
 - `math`
-  Common mathematical functions used in the pack as well as generic noise 
+  Common mathematical functions used in the pack as well as generic noise
   samplers are defined here.
 
 - `*/rearth/`

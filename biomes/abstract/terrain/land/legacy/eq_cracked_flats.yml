@@ -6,6 +6,8 @@ abstract: true
 
 vars: &variables
   base: $customization.yml:terrain-base-y-level
+  height: $customization.yml:terrain-height
+  easing: 0.075
   crackFrequency: 1
   crackLowerThreshold: -0.2
   crackUpperThreshold: -0.1

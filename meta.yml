@@ -65,3 +65,7 @@ palette-bottom: # Added to the bottom of every palette
 palette-bedrock: # Added to the bottom of palettes that use their own deepslate palette
   - BEDROCK: $meta.yml:strata.bedrock.top
   - BLOCK:minecraft:bedrock: $meta.yml:strata.bedrock.bottom
+palette-slant-generic:
+  - BLOCK:minecraft:stone: $meta.yml:top-y
+palette-underwater:
+  - MUDDY_BEACH: ${meta.yml:ocean-level} - 1

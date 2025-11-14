@@ -15,10 +15,10 @@ colors:
   grass: 0x163b46
   foliage: 0x195a58
 
-  climate:
-    precipitation: rain
-    temperature: 1.0
-    downfall: 1.0
+climate:
+  precipitation: true
+  temperature: 1.0
+  downfall: 1.0
 
 palette:
   - BLOCK:minecraft:stone: $meta.yml:top-y
@@ -29,5 +29,7 @@ features:
     - SCULK_WEBS
     - SCULK_PATCHES
     - SCULK_TENDRIL
+  trees:
+    - SCULK_BLOBS
   flora:
     - SCULK_FLORA

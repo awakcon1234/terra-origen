@@ -20,14 +20,7 @@ locator:
         block: minecraft:water
         offset: 0
       - type: MATCH_SET
-        blocks:
-          - minecraft:sand
-          - minecraft:gravel
-          - minecraft:clay
-          - minecraft:stone
-          - minecraft:granite
-          - minecraft:diorite
-          - minecraft:andesite
+        blocks: $features/vegetation/meta.yml:aquatic-plantable-blocks
         offset: -1
 
 structures:
@@ -43,8 +36,3 @@ structures:
   structures:
     - sea_pickle: 1
     - blank: 5
-
-blocks:
-  - materials:
-      - minecraft:sea_pickle
-    layers: 1

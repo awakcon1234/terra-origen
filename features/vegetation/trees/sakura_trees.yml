@@ -1,6 +1,23 @@
 id: SAKURA_TREES
 type: FEATURE
 
+mask: &mask
+  sampler:
+    type: PROBABILITY
+    sampler:
+      type: DOMAIN_WARP
+      amplitude: 10
+      warp:
+        type: GAUSSIAN
+      sampler:
+        type: FBM
+        octaves: 2
+        sampler:
+          type: OPEN_SIMPLEX_2
+          frequency: 0.01
+          salt: 98342
+  threshold: 0.4
+
 distributor:
   type: AND
   distributors:
@@ -9,18 +26,7 @@ distributor:
       padding: 5
       salt: 5932
     - type: SAMPLER
-      sampler:
-        type: PROBABILITY
-        sampler:
-          type: DOMAIN_WARP
-          amplitude: 6
-          warp:
-            type: WHITE_NOISE
-          sampler:
-            type: OPEN_SIMPLEX_2
-            frequency: 0.01
-            salt: 98342
-      threshold: 0.5
+      <<: *mask
 
 locator:
   type: AND
@@ -33,7 +39,7 @@ locator:
       range: *range
       pattern:
         type: MATCH_SET
-        blocks: $features/vegetation/meta.yml:plantable-blocks
+        blocks: $features/vegetation/meta.yml:dry-plantable-blocks
         offset: -1
     - type: PATTERN
       range: *range
@@ -46,5 +52,8 @@ locator:
 
 structures:
   distribution:
-    type: CONSTANT
-  structures: cherry_blossom_tree_procedural
+    type: WHITE_NOISE
+    salt: 2818
+  structures:
+    - cherry_blossom_tree_procedural: 12
+    - large_cherry_blossom_tree_procedural: 6

@@ -4,6 +4,8 @@ extends:
   - ENVIRONMENT_LAND_TROPICAL_EQUATORIAL
   - EQ_GLOBAL_ERODED_PILLARS
   - CARVING_OCEAN
+  - ORES_EMERALD
+  - DEPOSITS_INFESTED
   - BASE
 color: $biomes/colors.yml:OVERGROWN_CLIFFS
 
@@ -11,7 +13,8 @@ vanilla: minecraft:jungle
 
 tags:
   - LAND_CAVES
-  - USE_RIVER
+  - USE_TROPICAL_RIVER
+  - DEEP_DARK
 
 colors:
   grass: 0x3abf13
@@ -21,11 +24,15 @@ colors:
 
 palette:
   - GRASS: $meta.yml:top-y
-  - SAND: ${meta.yml:ocean-level} + 3
-  - MUDDY_BEACH: $meta.yml:ocean-level
+  - << meta.yml:palette-underwater
   - << meta.yml:palette-bottom
 
 slant:
+  - threshold: 0.8
+    palette:
+      - GRASS: $meta.yml:top-y
+      - << meta.yml:palette-underwater
+      - << meta.yml:palette-bottom
   - threshold: 0.6
     palette:
       - MOSS_TUFF: $meta.yml:top-y
@@ -68,4 +75,5 @@ features:
   trees:
     - JUNGLE_TREES
     - JUNGLE_BUSHES
+    - DENSE_FALLEN_JUNGLE_TREES
   
