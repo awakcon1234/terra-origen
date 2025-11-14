@@ -2,7 +2,7 @@ id: COAST_MEDIUM_B
 type: BIOME
 extends:
   - BASE
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:BEACH
 
 tags:
   - USE_RIVER
