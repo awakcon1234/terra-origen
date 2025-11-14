@@ -11,8 +11,8 @@ distributor:
 locator:
   type: PATTERN
   range:
-  min: ${meta.yml:deepslate-top} - 7
-  max: ${meta.yml:ocean-level} - 6
+    min: ${meta.yml:deepslate-top} - 7
+    max: ${meta.yml:ocean-level} - 6
   pattern:
     type: AND
     patterns:
