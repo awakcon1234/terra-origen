@@ -1,7 +1,7 @@
 id: SINKHOLE_OUTER
 type: BIOME
 vanilla: minecraft:plains
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:TEMPERATE_GRASSLAND
 extends:
   - DEPOSITS_DEFAULT
   - ORES_DEFAULT

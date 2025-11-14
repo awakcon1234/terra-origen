@@ -3,7 +3,7 @@ type: BIOME
 vanilla: minecraft:plains
 extends: [ CARVING_LAND, BASE ]
 
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:TEMPERATE_GRASSLAND
 
 tags:
   - USE_RIVER

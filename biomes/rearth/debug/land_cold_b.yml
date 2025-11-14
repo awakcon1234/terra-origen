@@ -2,7 +2,7 @@ id: LAND_COLD_B
 type: BIOME
 extends:
   - BASE
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:TAIGA
 
 tags:
   - USE_RIVER

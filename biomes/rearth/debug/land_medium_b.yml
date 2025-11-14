@@ -2,7 +2,7 @@ id: LAND_MEDIUM_B
 type: BIOME
 extends:
   - BASE
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:FOREST_LOWLANDS
 
 tags:
   - USE_RIVER

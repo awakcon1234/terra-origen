@@ -2,7 +2,7 @@ id: VARIANT_H
 type: BIOME
 extends:
   - BASE
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:OAK_FOREST
 
 vanilla: minecraft:plains
 

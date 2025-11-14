@@ -2,7 +2,7 @@ id: VERDANT_VALLEYS
 type: BIOME
 extends: [ CARVING_LAND, BASE ]
 vanilla: minecraft:plains
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:TEMPERATE_GRASSLAND
 
 tags:
   - USE_VERDANT_RIVER

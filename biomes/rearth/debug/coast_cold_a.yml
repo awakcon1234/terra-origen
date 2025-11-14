@@ -2,7 +2,7 @@ id: COAST_COLD_A
 type: BIOME
 extends:
   - BASE
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:FROZEN_BEACH
 
 tags:
   - USE_RIVER

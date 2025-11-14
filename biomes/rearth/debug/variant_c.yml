@@ -1,6 +1,6 @@
 id: VARIANT_C
 type: BIOME
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:TEMPERATE_GRASSLAND
 
 vanilla: minecraft:plains
 

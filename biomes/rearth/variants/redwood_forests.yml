@@ -2,7 +2,7 @@ id: TALL_TIMBERLAND
 type: BIOME
 extends: [ EQ_MOUNTAIN_SPOTS, CARVING_LAND, BASE ]
 vanilla: minecraft:old_growth_pine_taiga
-color: $biomes/colors.yml:REDWOOD_FOREST
+color: $biomes/colors.yml:SEQUOIA_FOREST
 
 tags:
   - USE_RIVER

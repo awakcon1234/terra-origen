@@ -7,7 +7,7 @@ extends:
   - CARVING_OCEAN
   - BASE
 
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:DEEP_OCEAN
 
 colors:
   water: 0x050b4f

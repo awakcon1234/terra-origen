@@ -2,7 +2,7 @@ id: LAND_WARM_A
 type: BIOME
 extends:
   - BASE
-color: $biomes/colors.yml:PLAINS
+color: $biomes/colors.yml:SAVANNA
 
 tags:
   - USE_RIVER

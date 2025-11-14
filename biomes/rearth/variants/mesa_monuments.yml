@@ -1,7 +1,7 @@
 id: MESA_MONUMENTS
 type: BIOME
 vanilla: minecraft:badlands
-color: $biomes/colors.yml:CRACKED_BADLANDS_PLATEAU
+color: $biomes/colors.yml:DESERT_MESA
 extends: [ EQ_PILLARS, COLOR_XERIC, CARVING_LAND, BASE ]
 
 tags:
