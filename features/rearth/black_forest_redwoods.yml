@@ -50,4 +50,4 @@ structures:
   distribution:
     type: WHITE_NOISE
   structures:
-    - giant_redwood: 1
+    - giant_sequoia_tree_procedural: 1
