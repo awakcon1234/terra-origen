@@ -14,7 +14,12 @@ stages:
     from: ocean_coast_small
     sampler:
       type: EXPRESSION
-      expression: continentBorderCelledSmall(x, z)
+      expression: if(continentBorderCelledSmall(x, z) > 0.5, 1, -1)
+      samplers:
+        continentBorderCelledSmall:
+          dimensions: 2
+          type: CELLULAR
+          frequency: 0.01
     to:
       SELF: 1
       coast_small: 1
@@ -22,7 +27,12 @@ stages:
     from: ocean_coast_wide
     sampler:
       type: EXPRESSION
-      expression: continentBorderCelledBig(x, z)
+      expression: if(continentBorderCelledBig(x, z) > 0.5, 1, -1)
+      samplers:
+        continentBorderCelledBig:
+          dimensions: 2
+          type: CELLULAR
+          frequency: 0.01
     to:
       SELF: 1
       coast_wide: 1
