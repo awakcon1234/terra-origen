@@ -22,7 +22,7 @@ if (dir == 0) {
     z = 1;
 }
 
-str bee_data = "{bees:[";
+str bee_data = "bees:[";
 for (num i = 0; i < bees; i = i + 1) {
     str bee = "{entity_data:{id:\"minecraft:bee\"},min_ticks_in_hive:" + (i * 150) + ",ticks_in_hive:0}";
     bee_data = bee_data + bee;
@@ -30,6 +30,6 @@ for (num i = 0; i < bees; i = i + 1) {
         bee_data = bee_data + ",";
     }
 }
-bee_data = bee_data + "]}";
+bee_data = bee_data + "]";
 
-block(x, 0, z, "minecraft:bee_nest[facing=" + face + "]" + bee_data);
+block(x, 0, z, "minecraft:bee_nest[facing=" + face + "]{" + bee_data + "}");
