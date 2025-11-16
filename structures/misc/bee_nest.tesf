@@ -2,7 +2,6 @@ num dir = randomInt(4);
 num x = 0;
 num z = 0;
 str face = "west";
-num bees = 2 + randomInt(2);
 
 if (dir == 0) {
     face = "west";
@@ -22,14 +21,6 @@ if (dir == 0) {
     z = 1;
 }
 
-str bee_data = "bees:[";
-for (num i = 0; i < bees; i = i + 1) {
-    str bee = "{entity_data:{id:\"minecraft:bee\"},min_ticks_in_hive:" + (i * 150) + ",ticks_in_hive:0}";
-    bee_data = bee_data + bee;
-    if (i < bees - 1) {
-        bee_data = bee_data + ",";
-    }
-}
-bee_data = bee_data + "]";
-
-block(x, 0, z, "minecraft:bee_nest[facing=" + face + "]{" + bee_data + "}");
+// Place bee_nest without NBT data due to Terra 1.21+ compatibility issues
+// Bees will spawn naturally in the nest over time
+block(x, 0, z, "minecraft:bee_nest[facing=" + face + "]");
